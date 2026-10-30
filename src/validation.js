@@ -1,0 +1,7 @@
+export class ApiError extends Error{constructor(status,code,message){super(message);this.status=status;this.code=code;}}
+export function fail(status,code,message){throw new ApiError(status,code,message);}
+export function fields(body,allowed){if(!body||typeof body!=='object'||Array.isArray(body))fail(400,'VALIDATION_ERROR','Dữ liệu không hợp lệ');for(const k of Object.keys(body))if(!allowed.includes(k))fail(400,'VALIDATION_ERROR',`Trường không được phép: ${k}`);}
+export function str(v,name,max,required=true){if(v==null&&!required)return null;if(typeof v!=='string'||v.trim().length>max||(required&&!v.trim()))fail(400,'VALIDATION_ERROR',`${name} không hợp lệ`);return v.trim()||null;}
+export function id(v){if(!/^[1-9]\d{0,19}$/.test(String(v)))fail(400,'VALIDATION_ERROR','ID không hợp lệ');return String(v);}
+export function dates(a,b){const valid=v=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v)&&!Number.isNaN(Date.parse(v))&&new Date(v).toISOString().slice(0,10)===v;if(!valid(a)||!valid(b)||b<=a)fail(400,'INVALID_DATES','Ngày hẹn phải sau ngày mượn');const max=Number(process.env.MAX_BORROW_DAYS);if(max>0&&(Date.parse(b)-Date.parse(a))/86400000>max)fail(400,'BORROW_LIMIT','Vượt thời hạn mượn được cấu hình');}
+export function paging(q){const page=Number(q.page??1),pageSize=Number(q.pageSize??12);if(!Number.isInteger(page)||page<1||page>1000000||!Number.isInteger(pageSize)||pageSize<1||pageSize>100)fail(400,'VALIDATION_ERROR','Phân trang không hợp lệ');return {page,pageSize,offset:(page-1)*pageSize};}
