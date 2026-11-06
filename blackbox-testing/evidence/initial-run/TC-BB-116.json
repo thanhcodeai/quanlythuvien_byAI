@@ -1,0 +1,769 @@
+{
+  "id": "TC-BB-116",
+  "objective": "Đối chiếu tổng qua API danh sách",
+  "expected": "books=totalItems sách; users=đếm role USER; requests=sum(PENDING,APPROVED,DENIED); từng status khớp tổng lọc.",
+  "status": "Pass",
+  "actual": "Đã thực thi: mọi assertion trong ca đều đạt; xem request/response và thao tác kiểm chứng trong evidence.",
+  "started": "2026-11-06T02:17:20.342Z",
+  "ended": "2026-11-06T02:17:20.363Z",
+  "trace": [
+    {
+      "at": "2026-11-06T02:17:20.345Z",
+      "actor": "a",
+      "method": "GET",
+      "path": "/admin/stats",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "books": "11",
+          "users": "7",
+          "requests": "9",
+          "pending": "6",
+          "approved": "2",
+          "denied": "1"
+        },
+        "meta": {
+          "requestId": "ecba7373-028a-437e-ba0d-9b6461dec544"
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "167",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:20 GMT",
+        "etag": "W/\"a7-NOq0hnnu6SYCJVUwCT8RXXLnYJ4\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "ecba7373-028a-437e-ba0d-9b6461dec544",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 3
+    },
+    {
+      "at": "2026-11-06T02:17:20.349Z",
+      "actor": "a",
+      "method": "GET",
+      "path": "/admin/books?pageSize=100",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "5",
+              "bookCode": "BK-005",
+              "title": "Đắc nhân tâm",
+              "author": "Dale Carnegie",
+              "category": "Kỹ năng",
+              "description": "Những nguyên tắc giao tiếp và ứng xử.",
+              "totalQuantity": 10,
+              "availableQuantity": 10
+            },
+            {
+              "id": "1",
+              "bookCode": "BK-001",
+              "title": "Dế Mèn phiêu lưu ký",
+              "author": "Tô Hoài",
+              "category": "Văn học",
+              "description": "Hành trình khám phá và những bài học về tình bạn.",
+              "totalQuantity": 12,
+              "availableQuantity": 12
+            },
+            {
+              "id": "4",
+              "bookCode": "BK-004",
+              "title": "Lược sử thời gian",
+              "author": "Stephen Hawking",
+              "category": "Khoa học",
+              "description": "Khám phá vũ trụ, không gian và thời gian.",
+              "totalQuantity": 6,
+              "availableQuantity": 6
+            },
+            {
+              "id": "6",
+              "bookCode": "BK-006",
+              "title": "Nhà giả kim",
+              "author": "Paulo Coelho",
+              "category": "Văn học",
+              "description": "Hành trình theo đuổi ước mơ của chàng chăn cừu.",
+              "totalQuantity": 7,
+              "availableQuantity": 7
+            },
+            {
+              "id": "3",
+              "bookCode": "BK-003",
+              "title": "Nhập môn cơ sở dữ liệu",
+              "author": "Nguyễn Văn A",
+              "category": "Công nghệ",
+              "description": "Kiến thức nền tảng về dữ liệu quan hệ và SQL.",
+              "totalQuantity": 5,
+              "availableQuantity": 5
+            },
+            {
+              "id": "10",
+              "bookCode": "bb1793931431315create",
+              "title": "QA bb1793931431315create",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 3,
+              "availableQuantity": 3
+            },
+            {
+              "id": "12",
+              "bookCode": "bb1793931431315race",
+              "title": "QA bb1793931431315race",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 1,
+              "availableQuantity": 0
+            },
+            {
+              "id": "7",
+              "bookCode": "bb1793931431315stock",
+              "title": "QA bb1793931431315stock",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 2,
+              "availableQuantity": 1
+            },
+            {
+              "id": "8",
+              "bookCode": "bb1793931431315zero",
+              "title": "QA bb1793931431315zero",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 0,
+              "availableQuantity": 0
+            },
+            {
+              "id": "11",
+              "bookCode": "bb1793931431315zeroadd",
+              "title": "QA bb1793931431315zeroadd",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 0,
+              "availableQuantity": 0
+            },
+            {
+              "id": "2",
+              "bookCode": "BK-002",
+              "title": "Tôi thấy hoa vàng trên cỏ xanh",
+              "author": "Nguyễn Nhật Ánh",
+              "category": "Văn học",
+              "description": "Câu chuyện tuổi thơ trong trẻo ở một làng quê Việt Nam.",
+              "totalQuantity": 8,
+              "availableQuantity": 8
+            }
+          ],
+          "categories": [
+            "Công nghệ",
+            "Khoa học",
+            "Kỹ năng",
+            "QA",
+            "Văn học"
+          ]
+        },
+        "meta": {
+          "requestId": "a6620300-d267-4725-8007-f0e29b17c13b",
+          "page": 1,
+          "pageSize": 100,
+          "offset": 0,
+          "totalItems": "11",
+          "totalPages": 1
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "2664",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:20 GMT",
+        "etag": "W/\"a68-a8ikxYZnIQ/uJu7i9/3BJqB3vgo\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "a6620300-d267-4725-8007-f0e29b17c13b",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 4
+    },
+    {
+      "at": "2026-11-06T02:17:20.351Z",
+      "actor": "a",
+      "method": "GET",
+      "path": "/admin/users?pageSize=100",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "8",
+              "username": "bb1793931431315len72",
+              "fullName": "QA Thành",
+              "email": "bb1793931431315len72@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:17:16"
+            },
+            {
+              "id": "7",
+              "username": "bb1793931431315len71",
+              "fullName": "QA Thành",
+              "email": "bb1793931431315len71@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:17:15"
+            },
+            {
+              "id": "6",
+              "username": "bb1793931431315len9",
+              "fullName": "QA Thành",
+              "email": "bb1793931431315len9@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:17:14"
+            },
+            {
+              "id": "5",
+              "username": "bb1793931431315len8",
+              "fullName": "QA Thành",
+              "email": "bb1793931431315len8@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:17:13"
+            },
+            {
+              "id": "4",
+              "username": "bb1793931431315reg",
+              "fullName": "QA Thành",
+              "email": "bb1793931431315reg@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:17:13"
+            },
+            {
+              "id": "3",
+              "username": "bb1793931431315v",
+              "fullName": "QA Thành",
+              "email": "bb1793931431315v@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:17:12"
+            },
+            {
+              "id": "2",
+              "username": "bb1793931431315u",
+              "fullName": "QA Thành",
+              "email": "bb1793931431315u@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:17:12"
+            },
+            {
+              "id": "1",
+              "username": "admin",
+              "fullName": "Quản trị viên",
+              "email": null,
+              "role": "ADMIN",
+              "createdAt": "2026-11-06 02:13:35"
+            }
+          ]
+        },
+        "meta": {
+          "requestId": "e72841f8-36e6-4a71-b9f4-959ef2fdd4d1",
+          "page": 1,
+          "pageSize": 100,
+          "offset": 0,
+          "totalItems": "8",
+          "totalPages": 1
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1382",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:20 GMT",
+        "etag": "W/\"566-Z3PbcsNR0gKSDY2nCn0edbAHDSs\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "e72841f8-36e6-4a71-b9f4-959ef2fdd4d1",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 2
+    },
+    {
+      "at": "2026-11-06T02:17:20.354Z",
+      "actor": "a",
+      "method": "GET",
+      "path": "/admin/borrow-requests?pageSize=100",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "9",
+              "bookId": "12",
+              "title": "QA bb1793931431315race",
+              "bookCode": "bb1793931431315race",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315v",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "8",
+              "bookId": "12",
+              "title": "QA bb1793931431315race",
+              "bookCode": "bb1793931431315race",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "APPROVED",
+              "reviewedBy": "1",
+              "reviewedAt": "2026-11-06 02:17:19",
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "7",
+              "bookId": "7",
+              "title": "QA bb1793931431315stock",
+              "bookCode": "bb1793931431315stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "DENIED",
+              "reviewedBy": "1",
+              "reviewedAt": "2026-11-06 02:17:19",
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "6",
+              "bookId": "7",
+              "title": "QA bb1793931431315stock",
+              "bookCode": "bb1793931431315stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "APPROVED",
+              "reviewedBy": "1",
+              "reviewedAt": "2026-11-06 02:17:19",
+              "decisionNote": "QA approve",
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "5",
+              "bookId": "7",
+              "title": "QA bb1793931431315stock",
+              "bookCode": "bb1793931431315stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "4",
+              "bookId": "7",
+              "title": "QA bb1793931431315stock",
+              "bookCode": "bb1793931431315stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "3",
+              "bookId": "7",
+              "title": "QA bb1793931431315stock",
+              "bookCode": "bb1793931431315stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-07",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "2",
+              "bookId": "8",
+              "title": "QA bb1793931431315zero",
+              "bookCode": "bb1793931431315zero",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "1",
+              "bookId": "7",
+              "title": "QA bb1793931431315stock",
+              "bookCode": "bb1793931431315stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            }
+          ]
+        },
+        "meta": {
+          "requestId": "71e3f596-e690-4318-a288-72a91995ffc6",
+          "page": 1,
+          "pageSize": 100,
+          "offset": 0,
+          "totalItems": "9",
+          "totalPages": 1
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "2942",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:20 GMT",
+        "etag": "W/\"b7e-2j/Z6PJchX1N/u5Zp/lfd3jhRmc\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "71e3f596-e690-4318-a288-72a91995ffc6",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 3
+    },
+    {
+      "at": "2026-11-06T02:17:20.358Z",
+      "actor": "a",
+      "method": "GET",
+      "path": "/admin/borrow-requests?status=PENDING",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "9",
+              "bookId": "12",
+              "title": "QA bb1793931431315race",
+              "bookCode": "bb1793931431315race",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315v",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "5",
+              "bookId": "7",
+              "title": "QA bb1793931431315stock",
+              "bookCode": "bb1793931431315stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "4",
+              "bookId": "7",
+              "title": "QA bb1793931431315stock",
+              "bookCode": "bb1793931431315stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "3",
+              "bookId": "7",
+              "title": "QA bb1793931431315stock",
+              "bookCode": "bb1793931431315stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-07",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "2",
+              "bookId": "8",
+              "title": "QA bb1793931431315zero",
+              "bookCode": "bb1793931431315zero",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "1",
+              "bookId": "7",
+              "title": "QA bb1793931431315stock",
+              "bookCode": "bb1793931431315stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            }
+          ]
+        },
+        "meta": {
+          "requestId": "919306ce-9899-43e8-8dc5-b0bc16301dd4",
+          "page": 1,
+          "pageSize": 12,
+          "offset": 0,
+          "totalItems": "6",
+          "totalPages": 1
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1976",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:20 GMT",
+        "etag": "W/\"7b8-vQ65+/+gS50d3Pr3MQNxh84hxQQ\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "919306ce-9899-43e8-8dc5-b0bc16301dd4",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 4
+    },
+    {
+      "at": "2026-11-06T02:17:20.360Z",
+      "actor": "a",
+      "method": "GET",
+      "path": "/admin/borrow-requests?status=APPROVED",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "8",
+              "bookId": "12",
+              "title": "QA bb1793931431315race",
+              "bookCode": "bb1793931431315race",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "APPROVED",
+              "reviewedBy": "1",
+              "reviewedAt": "2026-11-06 02:17:19",
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            },
+            {
+              "id": "6",
+              "bookId": "7",
+              "title": "QA bb1793931431315stock",
+              "bookCode": "bb1793931431315stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "APPROVED",
+              "reviewedBy": "1",
+              "reviewedAt": "2026-11-06 02:17:19",
+              "decisionNote": "QA approve",
+              "createdAt": "2026-11-06 02:17:19"
+            }
+          ]
+        },
+        "meta": {
+          "requestId": "229eb420-9991-4330-b21f-2c3ced41b539",
+          "page": 1,
+          "pageSize": 12,
+          "offset": 0,
+          "totalItems": "2",
+          "totalPages": 1
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "808",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:20 GMT",
+        "etag": "W/\"328-kX8At1ntMc4O64FH8GKhV26f+mM\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "229eb420-9991-4330-b21f-2c3ced41b539",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 2
+    },
+    {
+      "at": "2026-11-06T02:17:20.363Z",
+      "actor": "a",
+      "method": "GET",
+      "path": "/admin/borrow-requests?status=DENIED",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "7",
+              "bookId": "7",
+              "title": "QA bb1793931431315stock",
+              "bookCode": "bb1793931431315stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931431315u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "DENIED",
+              "reviewedBy": "1",
+              "reviewedAt": "2026-11-06 02:17:19",
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:17:19"
+            }
+          ]
+        },
+        "meta": {
+          "requestId": "7f2a7ab0-8b0c-44d9-a2d4-24ae8ffe1730",
+          "page": 1,
+          "pageSize": 12,
+          "offset": 0,
+          "totalItems": "1",
+          "totalPages": 1
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "479",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:20 GMT",
+        "etag": "W/\"1df-tjKBpzw0+69GTRSRO7qkPTHr0o8\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "7f2a7ab0-8b0c-44d9-a2d4-24ae8ffe1730",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 3
+    }
+  ]
+}

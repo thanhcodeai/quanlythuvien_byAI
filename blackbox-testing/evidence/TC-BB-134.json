@@ -1,0 +1,52 @@
+{
+  "id": "TC-BB-134",
+  "status": "Pass",
+  "actual": "Các assertion UI đạt; xem ảnh và DOM/text/network.",
+  "screenshot": "evidence/TC-BB-134.png",
+  "bodyText": "▤ thư viện\nKHÔNG GIAN TRI THỨC\n◫   Tổng quan\n▤   Quản lý sách\n☷   Yêu cầu mượn\n♙   Người dùng\n⌕   Tra cứu sách\n○   Hồ sơ cá nhân\n\nKhông gian quản trị\n\n↪   Đăng xuất\nThư viện / Tổng quan thư viện\nQuản trị viên Q\nTổng quan thư viện\n\nNhững con số cập nhật từ thư viện.\n\nĐầu sách\n11\nĐộc giả\n11\nTổng yêu cầu\n10\nĐang chờ duyệt\n7\nĐã duyệt\n2\nTừ chối\n1\nXử lý yêu cầu mượn\n\nKiểm tra các yêu cầu đang chờ và số sách sẵn có trước khi duyệt.\n\nXem yêu cầu mượn →",
+  "network": [
+    {
+      "path": "/api/v1/auth/login",
+      "method": "POST",
+      "status": 200,
+      "data": {
+        "success": true,
+        "data": {
+          "user": {
+            "id": "1",
+            "username": "admin",
+            "fullName": "Quản trị viên",
+            "email": null,
+            "role": "ADMIN",
+            "createdAt": "2026-11-06 02:18:53"
+          },
+          "csrfToken": "[REDACTED]"
+        },
+        "meta": {
+          "requestId": "102d8db0-16af-485b-9f97-0f1910b061a0"
+        }
+      }
+    },
+    {
+      "path": "/api/v1/admin/stats",
+      "method": "GET",
+      "status": 200,
+      "data": {
+        "success": true,
+        "data": {
+          "books": "11",
+          "users": "11",
+          "requests": "10",
+          "pending": "7",
+          "approved": "2",
+          "denied": "1"
+        },
+        "meta": {
+          "requestId": "319258a2-df6a-4c6f-ac40-a7dd681138b1"
+        }
+      }
+    }
+  ],
+  "pageErrors": [],
+  "bugId": null
+}

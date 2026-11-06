@@ -1,0 +1,24 @@
+{
+  "id": "TC-BB-125",
+  "status": "Pass",
+  "actual": "Các assertion UI đạt; xem ảnh và DOM/text/network.",
+  "screenshot": "evidence/TC-BB-125.png",
+  "bodyText": "▤ thư viện\nKHÔNG GIAN TRI THỨC\nMỗi cuốn sách,\nmột thế giới mới.\n\nKhám phá kho sách, tìm kiếm cảm hứng và bắt đầu hành trình đọc của bạn.\n\nCHÀO MỪNG BẠN\nĐăng nhập\n\nTiếp tục hành trình đọc của bạn.\n\nTên đăng nhập\nMật khẩu\nTên đăng nhập hoặc mật khẩu không đúng\nĐăng nhập\n\nChưa có tài khoản? Đăng ký\n\nĐăng ký thành công. Vui lòng đăng nhập.",
+  "network": [
+    {
+      "path": "/api/v1/auth/login",
+      "method": "POST",
+      "status": 401,
+      "data": {
+        "success": false,
+        "error": {
+          "code": "INVALID_CREDENTIALS",
+          "message": "Tên đăng nhập hoặc mật khẩu không đúng"
+        },
+        "requestId": "fe5b37df-97c6-4ca0-b8ed-0b9b5c9ce54d"
+      }
+    }
+  ],
+  "pageErrors": [],
+  "bugId": null
+}

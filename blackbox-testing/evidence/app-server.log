@@ -1,0 +1,16 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> library-management@1.0.0 start
+> node --env-file-if-exists=.env src/server.js
+
+Library website running
+{"requestId":"36fc2eb3-016a-48ed-bf59-9896d3fab09c","code":"INTERNAL_ERROR"}
+{"requestId":"aacc3cec-b688-44ce-a778-4be6e1154552","code":"INTERNAL_ERROR"}
+{"requestId":"3d625270-0e39-4b50-adbf-6c4e4b473dc4","code":"INTERNAL_ERROR"}
+{"requestId":"32bef4fe-c7a0-41bc-a2b4-a92dc5688139","code":"INTERNAL_ERROR"}
+{"requestId":"72057aeb-53e9-4e8d-83f6-6daaffe89369","code":"INTERNAL_ERROR"}
+{"requestId":"e58a5388-3d43-404e-9c3d-1be83af16191","code":"INTERNAL_ERROR"}
+{"requestId":"bfce29e6-8ef2-42de-a7dd-db5b1d92f21f","code":"INTERNAL_ERROR"}
+{"requestId":"9d5e00a3-5dbc-464e-80af-0d5d8be987eb","code":"INTERNAL_ERROR"}
+{"requestId":"a0ef1f99-6a61-435d-a7ed-d7e64d6336d1","code":"INTERNAL_ERROR"}
+{"requestId":"781c17c1-3600-470f-b579-5fad94a06858","code":"INTERNAL_ERROR"}

@@ -1,0 +1,10 @@
+{
+  "id": "TC-BB-123",
+  "status": "Pass",
+  "actual": "Các assertion UI đạt; xem ảnh và DOM/text/network.",
+  "screenshot": "evidence/TC-BB-123.png",
+  "bodyText": "▤ thư viện\nKHÔNG GIAN TRI THỨC\nMỗi cuốn sách,\nmột thế giới mới.\n\nKhám phá kho sách, tìm kiếm cảm hứng và bắt đầu hành trình đọc của bạn.\n\nCHÀO MỪNG BẠN\nĐăng nhập\n\nTiếp tục hành trình đọc của bạn.\n\nTên đăng nhập\nMật khẩu\nĐăng nhập\n\nChưa có tài khoản? Đăng ký",
+  "network": [],
+  "pageErrors": [],
+  "bugId": null
+}

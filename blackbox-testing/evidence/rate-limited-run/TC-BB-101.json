@@ -1,0 +1,146 @@
+{
+  "id": "TC-BB-101",
+  "objective": "Giảm total dưới số đã cấp",
+  "expected": "409; total/available không đổi.",
+  "status": "Pass",
+  "actual": "Đã thực thi: mọi assertion trong ca đều đạt; xem request/response và thao tác kiểm chứng trong evidence.",
+  "started": "2026-11-06T02:18:29.776Z",
+  "ended": "2026-11-06T02:18:29.783Z",
+  "trace": [
+    {
+      "at": "2026-11-06T02:18:29.779Z",
+      "actor": "u",
+      "method": "GET",
+      "path": "/books/7",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "id": "7",
+          "bookCode": "bb1793931507449stock",
+          "title": "QA bb1793931507449stock",
+          "author": "Tác giả QA",
+          "category": "QA",
+          "description": "Dữ liệu thử nghiệm",
+          "totalQuantity": 3,
+          "availableQuantity": 2
+        },
+        "meta": {
+          "requestId": "816a08fa-371f-4688-9811-eb08ccad0622"
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "286",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:18:29 GMT",
+        "etag": "W/\"11e-gS0gFBWhtW71qa5P6fkYC6lhRDY\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "816a08fa-371f-4688-9811-eb08ccad0622",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 3
+    },
+    {
+      "at": "2026-11-06T02:18:29.782Z",
+      "actor": "a",
+      "method": "PUT",
+      "path": "/admin/books/7",
+      "body": {
+        "bookCode": "bb1793931507449stock",
+        "title": "QA bb1793931507449stock",
+        "author": "Tác giả QA",
+        "category": "QA",
+        "description": "Dữ liệu thử nghiệm",
+        "totalQuantity": 0
+      },
+      "status": 409,
+      "response": {
+        "success": false,
+        "error": {
+          "code": "QUANTITY_CONFLICT",
+          "message": "Tổng sách không thể nhỏ hơn số đã cấp phát"
+        },
+        "requestId": "34c380c7-effe-4d8a-a552-91516445772b"
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "176",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:18:29 GMT",
+        "etag": "W/\"b0-ExGKfj9pZImgloDxayF+ClqRrJI\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "34c380c7-effe-4d8a-a552-91516445772b",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 3
+    },
+    {
+      "at": "2026-11-06T02:18:29.783Z",
+      "actor": "u",
+      "method": "GET",
+      "path": "/books/7",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "id": "7",
+          "bookCode": "bb1793931507449stock",
+          "title": "QA bb1793931507449stock",
+          "author": "Tác giả QA",
+          "category": "QA",
+          "description": "Dữ liệu thử nghiệm",
+          "totalQuantity": 3,
+          "availableQuantity": 2
+        },
+        "meta": {
+          "requestId": "6c475db9-b2d1-4708-8172-75f6d39abeb7"
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "286",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:18:29 GMT",
+        "etag": "W/\"11e-MKxrIk2YbAyCkG8FFxHTFEnGlUA\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "6c475db9-b2d1-4708-8172-75f6d39abeb7",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 1
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+TC-BB-046 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-067 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-069 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-071 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-073 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-117 Fail The expression evaluated to a falsy value:
+
+  assert.ok(r.json.requestId)
+
+TC-BB-118 Fail The expression evaluated to a falsy value:
+
+  assert.ok(r.json.requestId)
+
+TC-BB-119 Fail The expression evaluated to a falsy value:
+
+  assert.ok(r.json.requestId)
+
+{"total":121,"Pass":113,"Fail":8,"Blocked":0,"Not Run":0}

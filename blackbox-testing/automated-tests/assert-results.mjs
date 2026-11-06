@@ -1,0 +1,2 @@
+import{readFileSync}from'node:fs';import{resolve,dirname}from'node:path';import{fileURLToPath}from'node:url';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');const results=['results.json','ui-results.json'].flatMap(p=>JSON.parse(readFileSync(root+'/evidence/'+p,'utf8')));const bad=results.filter(x=>x.status!=='Pass');console.log(JSON.stringify({total:results.length,nonPassing:bad.length}));process.exitCode=bad.length?1:0;

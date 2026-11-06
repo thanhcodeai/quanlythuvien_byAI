@@ -1,0 +1,93 @@
+TC-BB-028 Fail Expected values to be strictly deep-equal:
++ actual - expected
+
++ []
+- [
+-   '7'
+- ]
+
+TC-BB-033 Fail Expected values to be strictly equal:
++ actual - expected
+
++ 'QA bb1793931431315stock'
+- undefined
+
+TC-BB-044 Fail Expected values to be strictly equal:
+
+'undefined' !== '7'
+
+TC-BB-046 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-067 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-069 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-071 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-073 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-075 Fail Expected values to be strictly equal:
+
+undefined !== 3
+
+TC-BB-076 Fail Expected values to be strictly equal:
+
+400 !== 409
+
+TC-BB-083 Fail Expected values to be strictly equal:
+
+undefined !== 0
+
+TC-BB-086 Fail Expected values to be strictly equal:
+
+400 !== 200
+
+TC-BB-100 Fail Expected values to be strictly equal:
+
+400 !== 200
+
+TC-BB-101 Fail Expected values to be strictly equal:
+
+400 !== 409
+
+TC-BB-104 Fail Expected values to be strictly equal:
++ actual - expected
+
++ undefined
+- 'USER'
+
+TC-BB-109 Fail Expected values to be strictly equal:
+
+400 !== 200
+
+TC-BB-112 Fail Expected values to be strictly equal:
+
+400 !== 200
+
+TC-BB-113 Fail Expected values to be strictly equal:
+
+400 !== 401
+
+TC-BB-117 Fail The expression evaluated to a falsy value:
+
+  assert.ok(r.json.requestId)
+
+TC-BB-118 Fail The expression evaluated to a falsy value:
+
+  assert.ok(r.json.requestId)
+
+TC-BB-119 Fail The expression evaluated to a falsy value:
+
+  assert.ok(r.json.requestId)
+
+{"total":121,"Pass":100,"Fail":21,"Blocked":0,"Not Run":0}

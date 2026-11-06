@@ -1,0 +1,148 @@
+{
+  "id": "TC-BB-135",
+  "status": "Pass",
+  "actual": "Các assertion UI đạt; xem ảnh và DOM/text/network.",
+  "screenshot": "evidence/TC-BB-135.png",
+  "bodyText": "▤ thư viện\nKHÔNG GIAN TRI THỨC\n◫   Tổng quan\n▤   Quản lý sách\n☷   Yêu cầu mượn\n♙   Người dùng\n⌕   Tra cứu sách\n○   Hồ sơ cá nhân\n\nKhông gian quản trị\n\n↪   Đăng xuất\nThư viện / Quản lý sách\nQuản trị viên Q\nQuản lý sách\n\nQuản lý thông tin đầu sách và số lượng.\n\n＋ Thêm mới\nTất cả thể loại\nCông nghệ\nKhoa học\nKỹ năng\nQA\nVăn học\nTên A–Z\nMới nhất\nSẵn có nhiều nhất\nTìm kiếm\nDanh sách đầu sách\n11 đầu sách\nMÃ / TÊN SÁCH\tTÁC GIẢ\tTHỂ LOẠI\tSẴN CÓ / TỔNG\tTHAO TÁC\nBK-005\nĐắc nhân tâm\tDale Carnegie\tKỹ năng\t10 / 10\tSửaXóa\nBK-001\nDế Mèn phiêu lưu ký\tTô Hoài\tVăn học\t12 / 12\tSửaXóa\nBK-004\nLược sử thời gian\tStephen Hawking\tKhoa học\t6 / 6\tSửaXóa\nBK-006\nNhà giả kim\tPaulo Coelho\tVăn học\t7 / 7\tSửaXóa\nBK-003\nNhập môn cơ sở dữ liệu\tNguyễn Văn A\tCông nghệ\t5 / 5\tSửaXóa\nbb1793931538530create\nQA bb1793931538530create\tTác giả QA\tQA\t3 / 3\tSửaXóa\nbb1793931538530race\nQA bb1793931538530race\tTác giả QA\tQA\t0 / 1\tSửaXóa\nbb1793931538530stock\nQA bb1793931538530stock\tTác giả QA\tQA\t2 / 3\tSửaXóa\nbb1793931538530zero\nQA bb1793931538530zero\tTác giả QA\tQA\t0 / 0\tSửaXóa\nbb1793931538530zeroadd\nQA bb1793931538530zeroadd\tTác giả QA\tQA\t0 / 0\tSửaXóa\nBK-002\nTôi thấy hoa vàng trên cỏ xanh\tNguyễn Nhật Ánh\tVăn học\t8 / 8\tSửaXóa\n11 kết quả · Trang 1/1\n← Trước\nSau →",
+  "network": [
+    {
+      "path": "/api/v1/admin/books?page=1&pageSize=12&q=&sort=title",
+      "method": "GET",
+      "status": 200,
+      "data": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "5",
+              "bookCode": "BK-005",
+              "title": "Đắc nhân tâm",
+              "author": "Dale Carnegie",
+              "category": "Kỹ năng",
+              "description": "Những nguyên tắc giao tiếp và ứng xử.",
+              "totalQuantity": 10,
+              "availableQuantity": 10
+            },
+            {
+              "id": "1",
+              "bookCode": "BK-001",
+              "title": "Dế Mèn phiêu lưu ký",
+              "author": "Tô Hoài",
+              "category": "Văn học",
+              "description": "Hành trình khám phá và những bài học về tình bạn.",
+              "totalQuantity": 12,
+              "availableQuantity": 12
+            },
+            {
+              "id": "4",
+              "bookCode": "BK-004",
+              "title": "Lược sử thời gian",
+              "author": "Stephen Hawking",
+              "category": "Khoa học",
+              "description": "Khám phá vũ trụ, không gian và thời gian.",
+              "totalQuantity": 6,
+              "availableQuantity": 6
+            },
+            {
+              "id": "6",
+              "bookCode": "BK-006",
+              "title": "Nhà giả kim",
+              "author": "Paulo Coelho",
+              "category": "Văn học",
+              "description": "Hành trình theo đuổi ước mơ của chàng chăn cừu.",
+              "totalQuantity": 7,
+              "availableQuantity": 7
+            },
+            {
+              "id": "3",
+              "bookCode": "BK-003",
+              "title": "Nhập môn cơ sở dữ liệu",
+              "author": "Nguyễn Văn A",
+              "category": "Công nghệ",
+              "description": "Kiến thức nền tảng về dữ liệu quan hệ và SQL.",
+              "totalQuantity": 5,
+              "availableQuantity": 5
+            },
+            {
+              "id": "10",
+              "bookCode": "bb1793931538530create",
+              "title": "QA bb1793931538530create",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 3,
+              "availableQuantity": 3
+            },
+            {
+              "id": "13",
+              "bookCode": "bb1793931538530race",
+              "title": "QA bb1793931538530race",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 1,
+              "availableQuantity": 0
+            },
+            {
+              "id": "7",
+              "bookCode": "bb1793931538530stock",
+              "title": "QA bb1793931538530stock",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 3,
+              "availableQuantity": 2
+            },
+            {
+              "id": "8",
+              "bookCode": "bb1793931538530zero",
+              "title": "QA bb1793931538530zero",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 0,
+              "availableQuantity": 0
+            },
+            {
+              "id": "12",
+              "bookCode": "bb1793931538530zeroadd",
+              "title": "QA bb1793931538530zeroadd",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 0,
+              "availableQuantity": 0
+            },
+            {
+              "id": "2",
+              "bookCode": "BK-002",
+              "title": "Tôi thấy hoa vàng trên cỏ xanh",
+              "author": "Nguyễn Nhật Ánh",
+              "category": "Văn học",
+              "description": "Câu chuyện tuổi thơ trong trẻo ở một làng quê Việt Nam.",
+              "totalQuantity": 8,
+              "availableQuantity": 8
+            }
+          ],
+          "categories": [
+            "Công nghệ",
+            "Khoa học",
+            "Kỹ năng",
+            "QA",
+            "Văn học"
+          ]
+        },
+        "meta": {
+          "requestId": "f9d6b043-71c4-44ba-8950-64c8ac6991c6",
+          "page": 1,
+          "pageSize": 12,
+          "offset": 0,
+          "totalItems": "11",
+          "totalPages": 1
+        }
+      }
+    }
+  ],
+  "pageErrors": [],
+  "bugId": null
+}

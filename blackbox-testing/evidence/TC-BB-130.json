@@ -1,0 +1,98 @@
+{
+  "id": "TC-BB-130",
+  "status": "Pass",
+  "actual": "Các assertion UI đạt; xem ảnh và DOM/text/network.",
+  "screenshot": "evidence/TC-BB-130.png",
+  "bodyText": "▤ thư viện\nKHÔNG GIAN TRI THỨC\n▤   Khám phá sách\n◷   Lịch sử mượn\n○   Hồ sơ cá nhân\n\nKhông gian độc giả\n\n↪   Đăng xuất\nThư viện / Lịch sử mượn sách\nQA Giao diện Q\nLịch sử mượn sách\n\nTheo dõi các yêu cầu mượn của bạn.\n\nTất cả trạng thái\nĐang chờ\nĐã duyệt\nTừ chối\nSÁCH / MÃ YÊU CẦU\tNGÀY MƯỢN\tNGÀY HẸN\tTRẠNG THÁI\tCHI TIẾT\nDế Mèn phiêu lưu ký\n#10 · BK-001\t2026-11-06\t2026-11-20\tĐang chờ\tXem\n1 kết quả · Trang 1/1\n← Trước\nSau →\nThao tác thành công",
+  "network": [
+    {
+      "path": "/api/v1/borrow-requests",
+      "method": "POST",
+      "status": 201,
+      "data": {
+        "success": true,
+        "data": {
+          "id": "10",
+          "status": "PENDING"
+        },
+        "meta": {
+          "requestId": "9a4b145f-cc55-4fb8-a2b9-00d08e76af38"
+        }
+      }
+    },
+    {
+      "path": "/api/v1/books?page=1&pageSize=12&q=D%E1%BA%BF+M%C3%A8n&sort=title",
+      "method": "GET",
+      "status": 200,
+      "data": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "1",
+              "bookCode": "BK-001",
+              "title": "Dế Mèn phiêu lưu ký",
+              "author": "Tô Hoài",
+              "category": "Văn học",
+              "description": "Hành trình khám phá và những bài học về tình bạn.",
+              "totalQuantity": 12,
+              "availableQuantity": 12
+            }
+          ],
+          "categories": [
+            "Công nghệ",
+            "Khoa học",
+            "Kỹ năng",
+            "QA",
+            "Văn học"
+          ]
+        },
+        "meta": {
+          "requestId": "bf26110c-25cf-46a1-ad62-b4c2482147de",
+          "page": 1,
+          "pageSize": 12,
+          "offset": 0,
+          "totalItems": "1",
+          "totalPages": 1
+        }
+      }
+    },
+    {
+      "path": "/api/v1/me/borrow-requests?page=1&pageSize=12&q=&sort=title",
+      "method": "GET",
+      "status": 200,
+      "data": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "10",
+              "bookId": "1",
+              "title": "Dế Mèn phiêu lưu ký",
+              "bookCode": "BK-001",
+              "fullName": "QA Giao diện",
+              "username": "bbui1793931700980",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:21:45"
+            }
+          ]
+        },
+        "meta": {
+          "requestId": "8bb109a1-eaf6-439f-a275-266f31290446",
+          "page": 1,
+          "pageSize": 12,
+          "offset": 0,
+          "totalItems": "1",
+          "totalPages": 1
+        }
+      }
+    }
+  ],
+  "pageErrors": [],
+  "bugId": null
+}

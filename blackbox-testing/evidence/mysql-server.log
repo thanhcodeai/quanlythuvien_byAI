@@ -1,0 +1,8 @@
+2026-11-06T02:12:49.979321Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-11-06T02:12:50.248851Z 0 [System] [MY-010116] [Server] /workspace/scratch/2f677c8ad234/runtime/mysql-8.4.7-linux-glibc2.28-x86_64-minimal/bin/mysqld (mysqld 8.4.7) starting as process 5
+2026-11-06T02:12:50.257895Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-11-06T02:12:50.580862Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-11-06T02:12:50.860230Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2026-11-06T02:12:50.860260Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2026-11-06T02:12:50.864163Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/workspace' in the path is accessible to all OS users. Consider choosing a different directory.
+2026-11-06T02:12:50.889777Z 0 [System] [MY-010931] [Server] /workspace/scratch/2f677c8ad234/runtime/mysql-8.4.7-linux-glibc2.28-x86_64-minimal/bin/mysqld: ready for connections. Version: '8.4.7'  socket: ''  port: 3307  MySQL Community Server - GPL.

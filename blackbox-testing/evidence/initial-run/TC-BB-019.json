@@ -1,0 +1,54 @@
+{
+  "id": "TC-BB-019",
+  "objective": "Admin đăng nhập đúng",
+  "expected": "200 role ADMIN; đọc thống kê được.",
+  "status": "Pass",
+  "actual": "Đã thực thi: mọi assertion trong ca đều đạt; xem request/response và thao tác kiểm chứng trong evidence.",
+  "started": "2026-11-06T02:17:17.367Z",
+  "ended": "2026-11-06T02:17:17.371Z",
+  "trace": [
+    {
+      "at": "2026-11-06T02:17:17.371Z",
+      "actor": "a",
+      "method": "GET",
+      "path": "/admin/stats",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "books": "9",
+          "users": "7",
+          "requests": "0",
+          "pending": "0",
+          "approved": "0",
+          "denied": "0"
+        },
+        "meta": {
+          "requestId": "566b76b8-5a64-475e-bda1-1b590d21c402"
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "166",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:17 GMT",
+        "etag": "W/\"a6-NFCEPABkrxdK41YJ/PD/l0a7eoU\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "566b76b8-5a64-475e-bda1-1b590d21c402",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 4
+    }
+  ]
+}

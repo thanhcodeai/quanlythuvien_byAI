@@ -1,0 +1,170 @@
+{
+  "id": "TC-BB-126",
+  "status": "Pass",
+  "actual": "Các assertion UI đạt; xem ảnh và DOM/text/network.",
+  "screenshot": "evidence/TC-BB-126.png",
+  "bodyText": "▤ thư viện\nKHÔNG GIAN TRI THỨC\n▤   Khám phá sách\n◷   Lịch sử mượn\n○   Hồ sơ cá nhân\n\nKhông gian độc giả\n\n↪   Đăng xuất\nThư viện / Khám phá sách\nQA Giao diện Q\nKhám phá sách\n\nTìm cuốn sách dành cho bạn trong kho tri thức.\n\nĐỌC SÁCH MỖI NGÀY\nMở trang sách.\nMở rộng thế giới của bạn.\n\nKhám phá những câu chuyện, ý tưởng và kiến thức đang chờ bạn.\n\n▤\nTất cả thể loại\nCông nghệ\nKhoa học\nKỹ năng\nQA\nVăn học\nTên A–Z\nMới nhất\nSẵn có nhiều nhất\nTìm kiếm\nKho sách thư viện\n11 đầu sách\nTHƯ VIỆN\nĐắc nhân tâm\nDale Carnegie\nKỸ NĂNG\nĐắc nhân tâm\n\nDale Carnegie\n\n● 10 bản sẵn có\nXem chi tiết →\nTHƯ VIỆN\nDế Mèn phiêu lưu ký\nTô Hoài\nVĂN HỌC\nDế Mèn phiêu lưu ký\n\nTô Hoài\n\n● 12 bản sẵn có\nXem chi tiết →\nTHƯ VIỆN\nLược sử thời gian\nStephen Hawking\nKHOA HỌC\nLược sử thời gian\n\nStephen Hawking\n\n● 6 bản sẵn có\nXem chi tiết →\nTHƯ VIỆN\nNhà giả kim\nPaulo Coelho\nVĂN HỌC\nNhà giả kim\n\nPaulo Coelho\n\n● 7 bản sẵn có\nXem chi tiết →\nTHƯ VIỆN\nNhập môn cơ sở dữ liệu\nNguyễn Văn A\nCÔNG NGHỆ\nNhập môn cơ sở dữ liệu\n\nNguyễn Văn A\n\n● 5 bản sẵn có\nXem chi tiết →\nTHƯ VIỆN\nQA bb1793931538530create\nTác giả QA\nQA\nQA bb1793931538530create\n\nTác giả QA\n\n● 3 bản sẵn có\nXem chi tiết →\nTHƯ VIỆN\nQA bb1793931538530race\nTác giả QA\nQA\nQA bb1793931538530race\n\nTác giả QA\n\n○ Hiện đã hết sách\nXem chi tiết →\nTHƯ VIỆN\nQA bb1793931538530stock\nTác giả QA\nQA\nQA bb1793931538530stock\n\nTác giả QA\n\n● 2 bản sẵn có\nXem chi tiết →\nTHƯ VIỆN\nQA bb1793931538530zero\nTác giả QA\nQA\nQA bb1793931538530zero\n\nTác giả QA\n\n○ Hiện đã hết sách\nXem chi tiết →\nTHƯ VIỆN\nQA bb1793931538530zeroadd\nTác giả QA\nQA\nQA bb1793931538530zeroadd\n\nTác giả QA\n\n○ Hiện đã hết sách\nXem chi tiết →\nTHƯ VIỆN\nTôi thấy hoa vàng trên cỏ xanh\nNguyễn Nhật Ánh\nVĂN HỌC\nTôi thấy hoa vàng trên cỏ xanh\n\nNguyễn Nhật Ánh\n\n● 8 bản sẵn có\nXem chi tiết →\n11 kết quả · Trang 1/1\n← Trước\nSau →\nĐăng ký thành công. Vui lòng đăng nhập.",
+  "network": [
+    {
+      "path": "/api/v1/auth/login",
+      "method": "POST",
+      "status": 200,
+      "data": {
+        "success": true,
+        "data": {
+          "user": {
+            "id": "15",
+            "username": "bbui1793931700980",
+            "fullName": "QA Giao diện",
+            "email": "bbui1793931700980@example.test",
+            "role": "USER",
+            "createdAt": "2026-11-06 02:21:41"
+          },
+          "csrfToken": "[REDACTED]"
+        },
+        "meta": {
+          "requestId": "56a611c9-1971-4564-a3c5-b8d564c675df"
+        }
+      }
+    },
+    {
+      "path": "/api/v1/books?page=1&pageSize=12&q=&sort=title",
+      "method": "GET",
+      "status": 200,
+      "data": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "5",
+              "bookCode": "BK-005",
+              "title": "Đắc nhân tâm",
+              "author": "Dale Carnegie",
+              "category": "Kỹ năng",
+              "description": "Những nguyên tắc giao tiếp và ứng xử.",
+              "totalQuantity": 10,
+              "availableQuantity": 10
+            },
+            {
+              "id": "1",
+              "bookCode": "BK-001",
+              "title": "Dế Mèn phiêu lưu ký",
+              "author": "Tô Hoài",
+              "category": "Văn học",
+              "description": "Hành trình khám phá và những bài học về tình bạn.",
+              "totalQuantity": 12,
+              "availableQuantity": 12
+            },
+            {
+              "id": "4",
+              "bookCode": "BK-004",
+              "title": "Lược sử thời gian",
+              "author": "Stephen Hawking",
+              "category": "Khoa học",
+              "description": "Khám phá vũ trụ, không gian và thời gian.",
+              "totalQuantity": 6,
+              "availableQuantity": 6
+            },
+            {
+              "id": "6",
+              "bookCode": "BK-006",
+              "title": "Nhà giả kim",
+              "author": "Paulo Coelho",
+              "category": "Văn học",
+              "description": "Hành trình theo đuổi ước mơ của chàng chăn cừu.",
+              "totalQuantity": 7,
+              "availableQuantity": 7
+            },
+            {
+              "id": "3",
+              "bookCode": "BK-003",
+              "title": "Nhập môn cơ sở dữ liệu",
+              "author": "Nguyễn Văn A",
+              "category": "Công nghệ",
+              "description": "Kiến thức nền tảng về dữ liệu quan hệ và SQL.",
+              "totalQuantity": 5,
+              "availableQuantity": 5
+            },
+            {
+              "id": "10",
+              "bookCode": "bb1793931538530create",
+              "title": "QA bb1793931538530create",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 3,
+              "availableQuantity": 3
+            },
+            {
+              "id": "13",
+              "bookCode": "bb1793931538530race",
+              "title": "QA bb1793931538530race",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 1,
+              "availableQuantity": 0
+            },
+            {
+              "id": "7",
+              "bookCode": "bb1793931538530stock",
+              "title": "QA bb1793931538530stock",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 3,
+              "availableQuantity": 2
+            },
+            {
+              "id": "8",
+              "bookCode": "bb1793931538530zero",
+              "title": "QA bb1793931538530zero",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 0,
+              "availableQuantity": 0
+            },
+            {
+              "id": "12",
+              "bookCode": "bb1793931538530zeroadd",
+              "title": "QA bb1793931538530zeroadd",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 0,
+              "availableQuantity": 0
+            },
+            {
+              "id": "2",
+              "bookCode": "BK-002",
+              "title": "Tôi thấy hoa vàng trên cỏ xanh",
+              "author": "Nguyễn Nhật Ánh",
+              "category": "Văn học",
+              "description": "Câu chuyện tuổi thơ trong trẻo ở một làng quê Việt Nam.",
+              "totalQuantity": 8,
+              "availableQuantity": 8
+            }
+          ],
+          "categories": [
+            "Công nghệ",
+            "Khoa học",
+            "Kỹ năng",
+            "QA",
+            "Văn học"
+          ]
+        },
+        "meta": {
+          "requestId": "aabb1ce1-9b9e-4e72-99a8-0484c189d431",
+          "page": 1,
+          "pageSize": 12,
+          "offset": 0,
+          "totalItems": "11",
+          "totalPages": 1
+        }
+      }
+    }
+  ],
+  "pageErrors": [],
+  "bugId": null
+}

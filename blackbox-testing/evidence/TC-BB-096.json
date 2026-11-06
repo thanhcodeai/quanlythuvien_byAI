@@ -1,0 +1,246 @@
+{
+  "id": "TC-BB-096",
+  "objective": "Duyệt khi tồn 0",
+  "expected": "409; request vẫn PENDING; tồn vẫn 0.",
+  "status": "Pass",
+  "actual": "Đã thực thi: mọi assertion trong ca đều đạt; xem request/response và thao tác kiểm chứng trong evidence.",
+  "started": "2026-11-06T02:19:06.551Z",
+  "ended": "2026-11-06T02:19:06.565Z",
+  "trace": [
+    {
+      "at": "2026-11-06T02:19:06.558Z",
+      "actor": "a",
+      "method": "PATCH",
+      "path": "/admin/borrow-requests/2",
+      "body": {
+        "decision": "APPROVE"
+      },
+      "status": 409,
+      "response": {
+        "success": false,
+        "error": {
+          "code": "OUT_OF_STOCK",
+          "message": "Sách đã hết, yêu cầu vẫn đang chờ"
+        },
+        "requestId": "a9152b43-22f4-4678-9edf-83e8e64973c3"
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "159",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:19:06 GMT",
+        "etag": "W/\"9f-C8Vsy0sC10m+AkGzQQ8QDAjOQpI\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "a9152b43-22f4-4678-9edf-83e8e64973c3",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 7
+    },
+    {
+      "at": "2026-11-06T02:19:06.562Z",
+      "actor": "u",
+      "method": "GET",
+      "path": "/books/8",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "id": "8",
+          "bookCode": "bb1793931538530zero",
+          "title": "QA bb1793931538530zero",
+          "author": "Tác giả QA",
+          "category": "QA",
+          "description": "Dữ liệu thử nghiệm",
+          "totalQuantity": 0,
+          "availableQuantity": 0
+        },
+        "meta": {
+          "requestId": "8e43640b-15d2-42df-a671-4b5daabe4e95"
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "284",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:19:06 GMT",
+        "etag": "W/\"11c-EP4pqn/tzrvRGqpIVMTvmBSk3NI\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "8e43640b-15d2-42df-a671-4b5daabe4e95",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 4
+    },
+    {
+      "at": "2026-11-06T02:19:06.564Z",
+      "actor": "u",
+      "method": "GET",
+      "path": "/me/borrow-requests?pageSize=100",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "7",
+              "bookId": "7",
+              "title": "QA bb1793931538530stock",
+              "bookCode": "bb1793931538530stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "DENIED",
+              "reviewedBy": "1",
+              "reviewedAt": "2026-11-06 02:19:06",
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "6",
+              "bookId": "7",
+              "title": "QA bb1793931538530stock",
+              "bookCode": "bb1793931538530stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "APPROVED",
+              "reviewedBy": "1",
+              "reviewedAt": "2026-11-06 02:19:06",
+              "decisionNote": "QA approve",
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "5",
+              "bookId": "7",
+              "title": "QA bb1793931538530stock",
+              "bookCode": "bb1793931538530stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "4",
+              "bookId": "7",
+              "title": "QA bb1793931538530stock",
+              "bookCode": "bb1793931538530stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "3",
+              "bookId": "7",
+              "title": "QA bb1793931538530stock",
+              "bookCode": "bb1793931538530stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-07",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "2",
+              "bookId": "8",
+              "title": "QA bb1793931538530zero",
+              "bookCode": "bb1793931538530zero",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "1",
+              "bookId": "7",
+              "title": "QA bb1793931538530stock",
+              "bookCode": "bb1793931538530stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            }
+          ]
+        },
+        "meta": {
+          "requestId": "6e9c494c-5ab8-4b9a-9ceb-a8a92e012585",
+          "page": 1,
+          "pageSize": 100,
+          "offset": 0,
+          "totalItems": "7",
+          "totalPages": 1
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "2321",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:19:06 GMT",
+        "etag": "W/\"911-UbuTC+YYlfcZR9FB47MIVqd3/yY\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "6e9c494c-5ab8-4b9a-9ceb-a8a92e012585",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 2
+    }
+  ],
+  "bugId": null
+}

@@ -1,0 +1,72 @@
+{
+  "id": "TC-BB-028",
+  "objective": "Tìm theo tiêu đề duy nhất",
+  "expected": "200; đúng sách stock.",
+  "status": "Pass",
+  "actual": "Đã thực thi: mọi assertion trong ca đều đạt; xem request/response và thao tác kiểm chứng trong evidence.",
+  "started": "2026-11-06T02:18:29.493Z",
+  "ended": "2026-11-06T02:18:29.498Z",
+  "trace": [
+    {
+      "at": "2026-11-06T02:18:29.497Z",
+      "actor": "u",
+      "method": "GET",
+      "path": "/books?q=QA%20bb1793931507449stock",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "7",
+              "bookCode": "bb1793931507449stock",
+              "title": "QA bb1793931507449stock",
+              "author": "Tác giả QA",
+              "category": "QA",
+              "description": "Dữ liệu thử nghiệm",
+              "totalQuantity": 2,
+              "availableQuantity": 2
+            }
+          ],
+          "categories": [
+            "Công nghệ",
+            "Khoa học",
+            "Kỹ năng",
+            "QA",
+            "Văn học"
+          ]
+        },
+        "meta": {
+          "requestId": "78fa0d39-3b38-4006-9ee5-c724919f8da4",
+          "page": 1,
+          "pageSize": 12,
+          "offset": 0,
+          "totalItems": "1",
+          "totalPages": 1
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "438",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:18:29 GMT",
+        "etag": "W/\"1b6-zsHJ/Ez3Czq73ARtxZbbzBoKS4k\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "78fa0d39-3b38-4006-9ee5-c724919f8da4",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 4
+    }
+  ]
+}

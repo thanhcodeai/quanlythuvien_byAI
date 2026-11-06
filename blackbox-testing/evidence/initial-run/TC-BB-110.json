@@ -1,0 +1,91 @@
+{
+  "id": "TC-BB-110",
+  "objective": "Tự xóa Admin",
+  "expected": "409; Admin vẫn truy cập được thống kê.",
+  "status": "Pass",
+  "actual": "Đã thực thi: mọi assertion trong ca đều đạt; xem request/response và thao tác kiểm chứng trong evidence.",
+  "started": "2026-11-06T02:17:20.303Z",
+  "ended": "2026-11-06T02:17:20.311Z",
+  "trace": [
+    {
+      "at": "2026-11-06T02:17:20.307Z",
+      "actor": "a",
+      "method": "DELETE",
+      "path": "/admin/users/1",
+      "status": 409,
+      "response": {
+        "success": false,
+        "error": {
+          "code": "ADMIN_PROTECTED",
+          "message": "Không thể tự xóa hoặc xóa Admin cuối cùng"
+        },
+        "requestId": "5755505c-1125-4125-9379-b14943313a4b"
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "169",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:20 GMT",
+        "etag": "W/\"a9-u22BaFJhiFiI5Bu6x7+YDoUUeYA\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "5755505c-1125-4125-9379-b14943313a4b",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 4
+    },
+    {
+      "at": "2026-11-06T02:17:20.311Z",
+      "actor": "a",
+      "method": "GET",
+      "path": "/admin/stats",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "books": "11",
+          "users": "8",
+          "requests": "9",
+          "pending": "6",
+          "approved": "2",
+          "denied": "1"
+        },
+        "meta": {
+          "requestId": "38e4feb2-48df-454f-a8a0-a7025aa3e8e8"
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "167",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:20 GMT",
+        "etag": "W/\"a7-8j4LCGey5V7jhY+dI68eKWNwXZI\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "38e4feb2-48df-454f-a8a0-a7025aa3e8e8",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 4
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> library-management@1.0.0 migrate
+> node --env-file-if-exists=.env scripts/migrate.js
+
+.env not found. Continuing without it.
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+Error: connect ECONNREFUSED 127.0.0.1:3307
+    at file:///workspace/scratch/2f677c8ad234/app/scripts/migrate.js:3:144 {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 3307,
+  fatal: true
+}
+
+Node.js v24.22.1
