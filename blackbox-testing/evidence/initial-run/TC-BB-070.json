@@ -1,0 +1,48 @@
+{
+  "id": "TC-BB-070",
+  "objective": "u GET /admin/books",
+  "expected": "403; không trả dữ liệu Admin.",
+  "status": "Pass",
+  "actual": "Đã thực thi: mọi assertion trong ca đều đạt; xem request/response và thao tác kiểm chứng trong evidence.",
+  "started": "2026-11-06T02:17:19.367Z",
+  "ended": "2026-11-06T02:17:19.369Z",
+  "trace": [
+    {
+      "at": "2026-11-06T02:17:19.369Z",
+      "actor": "u",
+      "method": "GET",
+      "path": "/admin/books",
+      "status": 403,
+      "response": {
+        "success": false,
+        "error": {
+          "code": "FORBIDDEN",
+          "message": "Bạn không có quyền thực hiện"
+        },
+        "requestId": "8b2179de-9a50-4a53-b408-beebd7740234"
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "148",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:19 GMT",
+        "etag": "W/\"94-iFJLi2Fm5KXNppe8p1Hnzq382EU\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "8b2179de-9a50-4a53-b408-beebd7740234",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 2
+    }
+  ]
+}

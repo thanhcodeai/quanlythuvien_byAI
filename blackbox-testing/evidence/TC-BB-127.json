@@ -1,0 +1,37 @@
+{
+  "id": "TC-BB-127",
+  "status": "Pass",
+  "actual": "Các assertion UI đạt; xem ảnh và DOM/text/network.",
+  "screenshot": "evidence/TC-BB-127.png",
+  "bodyText": "▤ thư viện\nKHÔNG GIAN TRI THỨC\n▤   Khám phá sách\n◷   Lịch sử mượn\n○   Hồ sơ cá nhân\n\nKhông gian độc giả\n\n↪   Đăng xuất\nThư viện / Khám phá sách\nQA Giao diện Q\nKhám phá sách\n\nTìm cuốn sách dành cho bạn trong kho tri thức.\n\nĐỌC SÁCH MỖI NGÀY\nMở trang sách.\nMở rộng thế giới của bạn.\n\nKhám phá những câu chuyện, ý tưởng và kiến thức đang chờ bạn.\n\n▤\nTất cả thể loại\nCông nghệ\nKhoa học\nKỹ năng\nQA\nVăn học\nTên A–Z\nMới nhất\nSẵn có nhiều nhất\nTìm kiếm\nKho sách thư viện\n0 đầu sách\nChưa có dữ liệu phù hợp. Hãy thử thay đổi bộ lọc.\n0 kết quả · Trang 1/1\n← Trước\nSau →\nĐăng ký thành công. Vui lòng đăng nhập.",
+  "network": [
+    {
+      "path": "/api/v1/books?page=1&pageSize=12&q=bbui1793931700980absent&sort=title",
+      "method": "GET",
+      "status": 200,
+      "data": {
+        "success": true,
+        "data": {
+          "items": [],
+          "categories": [
+            "Công nghệ",
+            "Khoa học",
+            "Kỹ năng",
+            "QA",
+            "Văn học"
+          ]
+        },
+        "meta": {
+          "requestId": "141edab1-311a-4276-a690-b33931171fc8",
+          "page": 1,
+          "pageSize": 12,
+          "offset": 0,
+          "totalItems": "0",
+          "totalPages": 0
+        }
+      }
+    }
+  ],
+  "pageErrors": [],
+  "bugId": null
+}

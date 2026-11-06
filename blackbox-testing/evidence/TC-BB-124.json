@@ -1,0 +1,30 @@
+{
+  "id": "TC-BB-124",
+  "status": "Pass",
+  "actual": "Các assertion UI đạt; xem ảnh và DOM/text/network.",
+  "screenshot": "evidence/TC-BB-124.png",
+  "bodyText": "▤ thư viện\nKHÔNG GIAN TRI THỨC\nMỗi cuốn sách,\nmột thế giới mới.\n\nKhám phá kho sách, tìm kiếm cảm hứng và bắt đầu hành trình đọc của bạn.\n\nCHÀO MỪNG BẠN\nĐăng nhập\n\nTiếp tục hành trình đọc của bạn.\n\nTên đăng nhập\nMật khẩu\nĐăng nhập\n\nChưa có tài khoản? Đăng ký\n\nĐăng ký thành công. Vui lòng đăng nhập.",
+  "network": [
+    {
+      "path": "/api/v1/auth/register",
+      "method": "POST",
+      "status": 201,
+      "data": {
+        "success": true,
+        "data": {
+          "id": "15",
+          "username": "bbui1793931700980",
+          "fullName": "QA Giao diện",
+          "email": "bbui1793931700980@example.test",
+          "role": "USER",
+          "createdAt": "2026-11-06 02:21:41"
+        },
+        "meta": {
+          "requestId": "428b8257-3ed2-43e1-8981-cf64be2c3650"
+        }
+      }
+    }
+  ],
+  "pageErrors": [],
+  "bugId": null
+}

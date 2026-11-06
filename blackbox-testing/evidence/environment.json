@@ -1,0 +1,17 @@
+{
+  "capturedAt": "2026-11-06T02:22:59.854Z",
+  "node": "v24.22.1",
+  "os": "Ubuntu 24.04.3 LTS x86_64",
+  "database": "bb_library",
+  "mysql": {
+    "version": "8.4.7",
+    "collation": "utf8mb4_0900_ai_ci",
+    "port": 3307
+  },
+  "appCommit": "6bba7d7693c4deb0edeab8c5c44b2bdda1c82ea2",
+  "apiBase": "http://127.0.0.1:3001/api/v1",
+  "uiBase": "http://127.0.0.1:3002",
+  "browser": "Chromium Headless Shell 141.0.7390.37",
+  "playwright": "1.56.1",
+  "isolation": "Dedicated local MySQL datadir; TCP only; no production data"
+}

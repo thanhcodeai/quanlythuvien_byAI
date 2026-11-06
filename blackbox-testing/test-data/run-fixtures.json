@@ -1,0 +1,56 @@
+{
+  "runId": "bb1793931538530",
+  "base": "http://127.0.0.1:3001/api/v1",
+  "createdAt": "2026-11-06T02:19:00.437Z",
+  "users": {
+    "u": {
+      "id": "2",
+      "username": "bb1793931538530u",
+      "fullName": "QA Thành",
+      "email": "bb1793931538530u@example.test",
+      "role": "USER",
+      "createdAt": "2026-11-06 02:18:59"
+    },
+    "v": {
+      "id": "3",
+      "username": "bb1793931538530v",
+      "fullName": "QA Thành",
+      "email": "bb1793931538530v@example.test",
+      "role": "USER",
+      "createdAt": "2026-11-06 02:19:00"
+    }
+  },
+  "books": {
+    "stock": {
+      "id": "7",
+      "bookCode": "bb1793931538530stock",
+      "title": "QA bb1793931538530stock",
+      "author": "Tác giả QA",
+      "category": "QA",
+      "description": "Dữ liệu thử nghiệm",
+      "totalQuantity": 2,
+      "availableQuantity": 2
+    },
+    "zero": {
+      "id": "8",
+      "bookCode": "bb1793931538530zero",
+      "title": "QA bb1793931538530zero",
+      "author": "Tác giả QA",
+      "category": "QA",
+      "description": "Dữ liệu thử nghiệm",
+      "totalQuantity": 0,
+      "availableQuantity": 0
+    },
+    "disposable": {
+      "id": "9",
+      "bookCode": "bb1793931538530disposable",
+      "title": "QA bb1793931538530disposable",
+      "author": "Tác giả QA",
+      "category": "QA",
+      "description": "Dữ liệu thử nghiệm",
+      "totalQuantity": 3,
+      "availableQuantity": 3
+    }
+  },
+  "credentials": "Generated in memory; not stored in deliverable"
+}

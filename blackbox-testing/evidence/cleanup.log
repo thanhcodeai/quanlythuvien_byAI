@@ -1,0 +1,3 @@
+Reset disposable database bb_library; migrate and seed again before a new run
+All API/UI/replay evidence was saved before reset. No production database used.
+Sent SIGTERM to isolated test MySQL process; tests complete.

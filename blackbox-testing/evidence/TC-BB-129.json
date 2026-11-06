@@ -1,0 +1,32 @@
+{
+  "id": "TC-BB-129",
+  "status": "Pass",
+  "actual": "Các assertion UI đạt; xem ảnh và DOM/text/network.",
+  "screenshot": "evidence/TC-BB-129.png",
+  "bodyText": "▤ thư viện\nKHÔNG GIAN TRI THỨC\n▤   Khám phá sách\n◷   Lịch sử mượn\n○   Hồ sơ cá nhân\n\nKhông gian độc giả\n\n↪   Đăng xuất\nThư viện / Khám phá sách\nQA Giao diện Q\nKhám phá sách\n\nTìm cuốn sách dành cho bạn trong kho tri thức.\n\nĐỌC SÁCH MỖI NGÀY\nMở trang sách.\nMở rộng thế giới của bạn.\n\nKhám phá những câu chuyện, ý tưởng và kiến thức đang chờ bạn.\n\n▤\nTất cả thể loại\nCông nghệ\nKhoa học\nKỹ năng\nQA\nVăn học\nTên A–Z\nMới nhất\nSẵn có nhiều nhất\nTìm kiếm\nKho sách thư viện\n1 đầu sách\nTHƯ VIỆN\nDế Mèn phiêu lưu ký\nTô Hoài\nVĂN HỌC\nDế Mèn phiêu lưu ký\n\nTô Hoài\n\n● 12 bản sẵn có\nXem chi tiết →\n1 kết quả · Trang 1/1\n← Trước\nSau →\nDế Mèn phiêu lưu ký\nVĂN HỌC\n\nTô Hoài · BK-001\n\nHành trình khám phá và những bài học về tình bạn.\n\nSẵn có: 12 / 12\n\nGửi yêu cầu mượn\nHủy\nĐóng\nĐăng ký thành công. Vui lòng đăng nhập.",
+  "network": [
+    {
+      "path": "/api/v1/books/1",
+      "method": "GET",
+      "status": 200,
+      "data": {
+        "success": true,
+        "data": {
+          "id": "1",
+          "bookCode": "BK-001",
+          "title": "Dế Mèn phiêu lưu ký",
+          "author": "Tô Hoài",
+          "category": "Văn học",
+          "description": "Hành trình khám phá và những bài học về tình bạn.",
+          "totalQuantity": 12,
+          "availableQuantity": 12
+        },
+        "meta": {
+          "requestId": "e2a32a97-b15a-4683-9901-756c7e1b3d2e"
+        }
+      }
+    }
+  ],
+  "pageErrors": [],
+  "bugId": null
+}

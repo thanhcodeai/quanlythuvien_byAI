@@ -1,0 +1,12 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> library-management@1.0.0 migrate
+> node --env-file-if-exists=.env scripts/migrate.js
+
+Schema ready
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> library-management@1.0.0 seed
+> node --env-file-if-exists=.env scripts/seed.js
+
+Seed complete; existing accounts unchanged

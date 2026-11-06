@@ -1,0 +1,181 @@
+{
+  "id": "TC-BB-136",
+  "status": "Pass",
+  "actual": "Các assertion UI đạt; xem ảnh và DOM/text/network.",
+  "screenshot": "evidence/TC-BB-136.png",
+  "bodyText": "▤ thư viện\nKHÔNG GIAN TRI THỨC\n◫   Tổng quan\n▤   Quản lý sách\n☷   Yêu cầu mượn\n♙   Người dùng\n⌕   Tra cứu sách\n○   Hồ sơ cá nhân\n\nKhông gian quản trị\n\n↪   Đăng xuất\nThư viện / Yêu cầu mượn sách\nQuản trị viên Q\nYêu cầu mượn sách\n\nXem xét và xử lý yêu cầu từ độc giả.\n\nTất cả trạng thái\nĐang chờ\nĐã duyệt\nTừ chối\nSÁCH / MÃ YÊU CẦU\tĐỘC GIẢ\tNGÀY MƯỢN\tNGÀY HẸN\tTRẠNG THÁI\tCHI TIẾT\nDế Mèn phiêu lưu ký\n#10 · BK-001\tQA Giao diện\nbbui1793931700980\t2026-11-06\t2026-11-20\tĐang chờ\tXét duyệt\nQA bb1793931538530race\n#9 · bb1793931538530race\tQA Thành\nbb1793931538530v\t2026-11-06\t2026-11-20\tĐang chờ\tXét duyệt\nQA bb1793931538530race\n#8 · bb1793931538530race\tQA Thành\nbb1793931538530u\t2026-11-06\t2026-11-20\tĐã duyệt\tXem\nQA bb1793931538530stock\n#7 · bb1793931538530stock\tQA Thành\nbb1793931538530u\t2026-11-06\t2026-11-20\tTừ chối\tXem\nQA bb1793931538530stock\n#6 · bb1793931538530stock\tQA Thành\nbb1793931538530u\t2026-11-06\t2026-11-20\tĐã duyệt\tXem\nQA bb1793931538530stock\n#5 · bb1793931538530stock\tQA Thành\nbb1793931538530u\t2026-11-06\t2026-11-20\tĐang chờ\tXét duyệt\nQA bb1793931538530stock\n#4 · bb1793931538530stock\tQA Thành\nbb1793931538530u\t2026-11-06\t2026-11-20\tĐang chờ\tXét duyệt\nQA bb1793931538530stock\n#3 · bb1793931538530stock\tQA Thành\nbb1793931538530u\t2026-11-06\t2026-11-07\tĐang chờ\tXét duyệt\nQA bb1793931538530zero\n#2 · bb1793931538530zero\tQA Thành\nbb1793931538530u\t2026-11-06\t2026-11-20\tĐang chờ\tXét duyệt\nQA bb1793931538530stock\n#1 · bb1793931538530stock\tQA Thành\nbb1793931538530u\t2026-11-06\t2026-11-20\tĐang chờ\tXét duyệt\n10 kết quả · Trang 1/1\n← Trước\nSau →",
+  "network": [
+    {
+      "path": "/api/v1/admin/borrow-requests?page=1&pageSize=12&q=&sort=title",
+      "method": "GET",
+      "status": 200,
+      "data": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "10",
+              "bookId": "1",
+              "title": "Dế Mèn phiêu lưu ký",
+              "bookCode": "BK-001",
+              "fullName": "QA Giao diện",
+              "username": "bbui1793931700980",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:21:45"
+            },
+            {
+              "id": "9",
+              "bookId": "13",
+              "title": "QA bb1793931538530race",
+              "bookCode": "bb1793931538530race",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530v",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "8",
+              "bookId": "13",
+              "title": "QA bb1793931538530race",
+              "bookCode": "bb1793931538530race",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "APPROVED",
+              "reviewedBy": "1",
+              "reviewedAt": "2026-11-06 02:19:06",
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "7",
+              "bookId": "7",
+              "title": "QA bb1793931538530stock",
+              "bookCode": "bb1793931538530stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "DENIED",
+              "reviewedBy": "1",
+              "reviewedAt": "2026-11-06 02:19:06",
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "6",
+              "bookId": "7",
+              "title": "QA bb1793931538530stock",
+              "bookCode": "bb1793931538530stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "APPROVED",
+              "reviewedBy": "1",
+              "reviewedAt": "2026-11-06 02:19:06",
+              "decisionNote": "QA approve",
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "5",
+              "bookId": "7",
+              "title": "QA bb1793931538530stock",
+              "bookCode": "bb1793931538530stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "4",
+              "bookId": "7",
+              "title": "QA bb1793931538530stock",
+              "bookCode": "bb1793931538530stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "3",
+              "bookId": "7",
+              "title": "QA bb1793931538530stock",
+              "bookCode": "bb1793931538530stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-07",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "2",
+              "bookId": "8",
+              "title": "QA bb1793931538530zero",
+              "bookCode": "bb1793931538530zero",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            },
+            {
+              "id": "1",
+              "bookId": "7",
+              "title": "QA bb1793931538530stock",
+              "bookCode": "bb1793931538530stock",
+              "fullName": "QA Thành",
+              "username": "bb1793931538530u",
+              "borrowDate": "2026-11-06",
+              "dueDate": "2026-11-20",
+              "status": "PENDING",
+              "reviewedBy": null,
+              "reviewedAt": null,
+              "decisionNote": null,
+              "createdAt": "2026-11-06 02:19:06"
+            }
+          ]
+        },
+        "meta": {
+          "requestId": "c63026f9-ad1b-4191-9573-595c30cf0a05",
+          "page": 1,
+          "pageSize": 12,
+          "offset": 0,
+          "totalItems": "10",
+          "totalPages": 1
+        }
+      }
+    }
+  ],
+  "pageErrors": [],
+  "bugId": null
+}

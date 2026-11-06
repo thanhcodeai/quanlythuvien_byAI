@@ -1,0 +1,6 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> library-management@1.0.0 start
+> node --env-file-if-exists=.env src/server.js
+
+Library website running

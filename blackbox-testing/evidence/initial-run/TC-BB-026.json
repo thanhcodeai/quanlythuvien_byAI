@@ -1,0 +1,48 @@
+{
+  "id": "TC-BB-026",
+  "objective": "Guest không đọc sách",
+  "expected": "401 và error envelope.",
+  "status": "Pass",
+  "actual": "Đã thực thi: mọi assertion trong ca đều đạt; xem request/response và thao tác kiểm chứng trong evidence.",
+  "started": "2026-11-06T02:17:19.193Z",
+  "ended": "2026-11-06T02:17:19.194Z",
+  "trace": [
+    {
+      "at": "2026-11-06T02:17:19.194Z",
+      "actor": "guest",
+      "method": "GET",
+      "path": "/books",
+      "status": 401,
+      "response": {
+        "success": false,
+        "error": {
+          "code": "UNAUTHENTICATED",
+          "message": "Vui lòng đăng nhập"
+        },
+        "requestId": "95c6bef5-c336-4ae1-9d02-b9308e7f1dff"
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "139",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:19 GMT",
+        "etag": "W/\"8b-E8ituXLBzBM2XFtwmUWl2X6C5Nk\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "95c6bef5-c336-4ae1-9d02-b9308e7f1dff",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 1
+    }
+  ]
+}

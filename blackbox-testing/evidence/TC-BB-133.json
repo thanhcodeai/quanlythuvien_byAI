@@ -1,0 +1,29 @@
+{
+  "id": "TC-BB-133",
+  "status": "Pass",
+  "actual": "Các assertion UI đạt; xem ảnh và DOM/text/network.",
+  "screenshot": "evidence/TC-BB-133.png",
+  "bodyText": "▤ thư viện\nKHÔNG GIAN TRI THỨC\nMỗi cuốn sách,\nmột thế giới mới.\n\nKhám phá kho sách, tìm kiếm cảm hứng và bắt đầu hành trình đọc của bạn.\n\nCHÀO MỪNG BẠN\nĐăng nhập\n\nTiếp tục hành trình đọc của bạn.\n\nTên đăng nhập\nMật khẩu\nĐăng nhập\n\nChưa có tài khoản? Đăng ký",
+  "network": [
+    {
+      "path": "/api/v1/auth/logout",
+      "method": "POST",
+      "status": 204
+    },
+    {
+      "path": "/api/v1/me",
+      "method": "GET",
+      "status": 401,
+      "data": {
+        "success": false,
+        "error": {
+          "code": "UNAUTHENTICATED",
+          "message": "Vui lòng đăng nhập"
+        },
+        "requestId": "508d035f-56f6-4dd8-8db4-4ec8e510d00e"
+      }
+    }
+  ],
+  "pageErrors": [],
+  "bugId": null
+}

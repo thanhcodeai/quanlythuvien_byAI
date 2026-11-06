@@ -1,0 +1,306 @@
+[
+  {
+    "id": "TC-BB-122",
+    "module": "UI",
+    "objective": "UI: hiển thị đăng nhập",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Mở trang gốc, kiểm tra form.",
+    "expected": "Có heading Đăng nhập và trường username/password.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-123",
+    "module": "UI",
+    "objective": "UI: chặn submit form trống",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Bấm Đăng nhập khi chưa điền; đọc validity và network.",
+    "expected": "Form ở trang đăng nhập; input bắt buộc không hợp lệ; không gửi API login.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-124",
+    "module": "UI",
+    "objective": "UI: đăng ký tài khoản mới",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Bấm Đăng ký; điền username/fullName/email/password; gửi.",
+    "expected": "Hiện thông báo đăng ký thành công và trở về đăng nhập.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-125",
+    "module": "UI",
+    "objective": "UI: đăng nhập sai",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Điền đúng username, sai password; gửi.",
+    "expected": "Thông báo lỗi trong form; không vào giao diện độc giả.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-126",
+    "module": "UI",
+    "objective": "UI: đăng nhập đúng",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Điền password đúng; gửi; chờ danh sách sách.",
+    "expected": "Hiện Khám phá sách, tên QA Giao diện; không có nút quản lý người dùng.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-127",
+    "module": "UI",
+    "objective": "UI: tìm không có kết quả",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Tìm chuỗi ngẫu nhiên không tồn tại.",
+    "expected": "Hiện thông báo không tìm thấy; không có card sách.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-128",
+    "module": "UI",
+    "objective": "UI: tìm sách theo tiêu đề",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Tìm Dế Mèn; chờ kết quả.",
+    "expected": "Hiện Dế Mèn phiêu lưu ký và đúng một nút Xem chi tiết.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-129",
+    "module": "UI",
+    "objective": "UI: chi tiết sách",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Bấm Xem chi tiết.",
+    "expected": "Dialog có tên sách, Tô Hoài, BK-001, số sẵn có và nút mượn.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-130",
+    "module": "UI",
+    "objective": "UI: gửi yêu cầu mượn",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Bấm mượn; điền ngày 2026-11-06/2026-11-20; Lưu; mở lịch sử.",
+    "expected": "Gửi thành công; lịch sử cá nhân có Dế Mèn với trạng thái chờ duyệt.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-131",
+    "module": "UI",
+    "objective": "UI: hồ sơ cá nhân",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Mở Hồ sơ cá nhân.",
+    "expected": "Hiện đúng username và fullName của tài khoản UI.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-132",
+    "module": "UI",
+    "objective": "UI: reload giữ phiên",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Reload trang; mở Hồ sơ cá nhân.",
+    "expected": "Sau reload còn nav độc giả và truy cập được hồ sơ.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-133",
+    "module": "UI",
+    "objective": "UI: đăng xuất",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Bấm Đăng xuất, reload.",
+    "expected": "Quay về login; reload không còn nav độc giả.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-134",
+    "module": "UI",
+    "objective": "UI: Admin đăng nhập và thống kê",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Đăng nhập Admin cấp qua môi trường.",
+    "expected": "Hiện Tổng quan thư viện, thẻ Đầu sách/Độc giả/Tổng yêu cầu.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-135",
+    "module": "UI",
+    "objective": "UI: danh sách quản lý sách",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Mở Quản lý sách.",
+    "expected": "Hiện BK-001 và Dế Mèn trong khu quản lý sách.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-136",
+    "module": "UI",
+    "objective": "UI: danh sách xét duyệt",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Mở Yêu cầu mượn.",
+    "expected": "Hiện username UI và sách đã yêu cầu.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  },
+  {
+    "id": "TC-BB-137",
+    "module": "UI",
+    "objective": "UI: danh sách người dùng",
+    "technique": "Use case / State transition / EP",
+    "priority": "High",
+    "preconditions": "Chuỗi UI tuần tự; phụ thuộc ca trước. Database test đã migrate/seed; tài khoản UI mới được tạo ở TC-BB-124. Admin cấp qua biến môi trường.",
+    "testData": {
+      "username": "bbui1793931700980",
+      "fullName": "QA Giao diện",
+      "password": "Generated; redacted",
+      "bookCode": "BK-001"
+    },
+    "steps": "Mở Người dùng; tìm username UI bằng ô tìm kiếm.",
+    "expected": "Tìm username UI trong danh sách Admin; có fullName QA Giao diện.",
+    "status": "Not Run",
+    "actual": null,
+    "bugId": null
+  }
+]

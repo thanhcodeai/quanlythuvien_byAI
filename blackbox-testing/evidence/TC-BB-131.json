@@ -1,0 +1,10 @@
+{
+  "id": "TC-BB-131",
+  "status": "Pass",
+  "actual": "Các assertion UI đạt; xem ảnh và DOM/text/network.",
+  "screenshot": "evidence/TC-BB-131.png",
+  "bodyText": "▤ thư viện\nKHÔNG GIAN TRI THỨC\n▤   Khám phá sách\n◷   Lịch sử mượn\n○   Hồ sơ cá nhân\n\nKhông gian độc giả\n\n↪   Đăng xuất\nThư viện / Hồ sơ cá nhân\nQA Giao diện Q\nHồ sơ cá nhân\n\nThông tin tài khoản của bạn.\n\nThông tin tài khoản\nTên đăng nhập\nbbui1793931700980\nHọ và tên\nQA Giao diện\nEmail\nbbui1793931700980@example.test\nVai trò\nĐộc giả\nNgày tạo\n2026-11-06 02:21:41\nThao tác thành công",
+  "network": [],
+  "pageErrors": [],
+  "bugId": null
+}

@@ -1,0 +1,155 @@
+{
+  "id": "TC-BB-137",
+  "status": "Pass",
+  "actual": "Các assertion UI đạt; xem ảnh và DOM/text/network.",
+  "screenshot": "evidence/TC-BB-137.png",
+  "bodyText": "▤ thư viện\nKHÔNG GIAN TRI THỨC\n◫   Tổng quan\n▤   Quản lý sách\n☷   Yêu cầu mượn\n♙   Người dùng\n⌕   Tra cứu sách\n○   Hồ sơ cá nhân\n\nKhông gian quản trị\n\n↪   Đăng xuất\nThư viện / Quản lý người dùng\nQuản trị viên Q\nQuản lý người dùng\n\nQuản lý tài khoản và quyền truy cập.\n\n＋ Thêm mới\nTìm kiếm\nTÀI KHOẢN\tHỌ TÊN\tEMAIL\tVAI TRÒ\tTHAO TÁC\nbbui1793931700980\tQA Giao diện\tbbui1793931700980@example.test\tĐộc giả\tSửaXóa\n1 kết quả · Trang 1/1\n← Trước\nSau →",
+  "network": [
+    {
+      "path": "/api/v1/admin/users?page=1&pageSize=12&q=&sort=title",
+      "method": "GET",
+      "status": 200,
+      "data": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "15",
+              "username": "bbui1793931700980",
+              "fullName": "QA Giao diện",
+              "email": "bbui1793931700980@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:21:41"
+            },
+            {
+              "id": "14",
+              "username": "bbui1793931627804",
+              "fullName": "QA Giao diện",
+              "email": "bbui1793931627804@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:20:28"
+            },
+            {
+              "id": "13",
+              "username": "bbui1793931610058",
+              "fullName": "QA Giao diện",
+              "email": "bbui1793931610058@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:20:10"
+            },
+            {
+              "id": "12",
+              "username": "bbui1793931576439",
+              "fullName": "QA Giao diện",
+              "email": "bbui1793931576439@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:19:36"
+            },
+            {
+              "id": "8",
+              "username": "bb1793931538530len72",
+              "fullName": "QA Thành",
+              "email": "bb1793931538530len72@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:19:03"
+            },
+            {
+              "id": "7",
+              "username": "bb1793931538530len71",
+              "fullName": "QA Thành",
+              "email": "bb1793931538530len71@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:19:02"
+            },
+            {
+              "id": "6",
+              "username": "bb1793931538530len9",
+              "fullName": "QA Thành",
+              "email": "bb1793931538530len9@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:19:01"
+            },
+            {
+              "id": "5",
+              "username": "bb1793931538530len8",
+              "fullName": "QA Thành",
+              "email": "bb1793931538530len8@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:19:01"
+            },
+            {
+              "id": "4",
+              "username": "bb1793931538530reg",
+              "fullName": "QA Thành",
+              "email": "bb1793931538530reg@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:19:00"
+            },
+            {
+              "id": "3",
+              "username": "bb1793931538530v",
+              "fullName": "QA Thành",
+              "email": "bb1793931538530v@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:19:00"
+            },
+            {
+              "id": "2",
+              "username": "bb1793931538530u",
+              "fullName": "QA Thành",
+              "email": "bb1793931538530u@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:18:59"
+            },
+            {
+              "id": "1",
+              "username": "admin",
+              "fullName": "Quản trị viên",
+              "email": null,
+              "role": "ADMIN",
+              "createdAt": "2026-11-06 02:18:53"
+            }
+          ]
+        },
+        "meta": {
+          "requestId": "52055297-85a2-4c97-8f5e-15a201be1c72",
+          "page": 1,
+          "pageSize": 12,
+          "offset": 0,
+          "totalItems": "12",
+          "totalPages": 1
+        }
+      }
+    },
+    {
+      "path": "/api/v1/admin/users?page=1&pageSize=12&q=bbui1793931700980&sort=title",
+      "method": "GET",
+      "status": 200,
+      "data": {
+        "success": true,
+        "data": {
+          "items": [
+            {
+              "id": "15",
+              "username": "bbui1793931700980",
+              "fullName": "QA Giao diện",
+              "email": "bbui1793931700980@example.test",
+              "role": "USER",
+              "createdAt": "2026-11-06 02:21:41"
+            }
+          ]
+        },
+        "meta": {
+          "requestId": "0afaf01f-192d-4402-8b01-f60b5499852d",
+          "page": 1,
+          "pageSize": 12,
+          "offset": 0,
+          "totalItems": "1",
+          "totalPages": 1
+        }
+      }
+    }
+  ],
+  "pageErrors": [],
+  "bugId": null
+}

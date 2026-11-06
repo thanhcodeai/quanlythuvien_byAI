@@ -1,0 +1,115 @@
+{
+  "id": "TC-BB-013",
+  "objective": "Độ dài mật khẩu ASCII 72",
+  "expected": "201; đăng nhập lại bằng đúng mật khẩu thành công.",
+  "status": "Pass",
+  "actual": "Đã thực thi: mọi assertion trong ca đều đạt; xem request/response và thao tác kiểm chứng trong evidence.",
+  "started": "2026-11-06T02:17:15.837Z",
+  "ended": "2026-11-06T02:17:16.602Z",
+  "trace": [
+    {
+      "at": "2026-11-06T02:17:16.200Z",
+      "actor": "guest",
+      "method": "POST",
+      "path": "/auth/register",
+      "body": {
+        "username": "bb1793931431315len72",
+        "fullName": "QA Thành",
+        "password": "[REDACTED]",
+        "email": "bb1793931431315len72@example.test"
+      },
+      "status": 201,
+      "response": {
+        "success": true,
+        "data": {
+          "id": "8",
+          "username": "bb1793931431315len72",
+          "fullName": "QA Thành",
+          "email": "bb1793931431315len72@example.test",
+          "role": "USER",
+          "createdAt": "2026-11-06 02:17:16"
+        },
+        "meta": {
+          "requestId": "24b11199-696b-4bf3-b307-6ce8ee015891"
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "243",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:16 GMT",
+        "etag": "W/\"f3-KvpFUOlUytSIOrA/0NnlF5bddlo\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "ratelimit": "\"40-in-15min\"; r=18; t=706",
+        "ratelimit-policy": "\"40-in-15min\"; q=40; w=900; pk=:MTJjYTE3YjQ5YWYy:",
+        "referrer-policy": "no-referrer",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "24b11199-696b-4bf3-b307-6ce8ee015891",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 363
+    },
+    {
+      "at": "2026-11-06T02:17:16.602Z",
+      "actor": "guest",
+      "method": "POST",
+      "path": "/auth/login",
+      "body": {
+        "username": "bb1793931431315len72",
+        "password": "[REDACTED]"
+      },
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "user": {
+            "id": "8",
+            "username": "bb1793931431315len72",
+            "fullName": "QA Thành",
+            "email": "bb1793931431315len72@example.test",
+            "role": "USER",
+            "createdAt": "2026-11-06 02:17:16"
+          },
+          "csrfToken": "[REDACTED]"
+        },
+        "meta": {
+          "requestId": "44ad6bca-6651-4116-9b90-72295f1a844f"
+        }
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "331",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "content-type": "application/json; charset=utf-8",
+        "cross-origin-opener-policy": "same-origin",
+        "cross-origin-resource-policy": "same-origin",
+        "date": "Fri, 06 Nov 2026 02:17:16 GMT",
+        "etag": "W/\"14b-tCP3EKyC/xzIL3ncL0cV5qrJyNY\"",
+        "keep-alive": "timeout=5",
+        "origin-agent-cluster": "?1",
+        "ratelimit": "\"40-in-15min\"; r=17; t=706",
+        "ratelimit-policy": "\"40-in-15min\"; q=40; w=900; pk=:MTJjYTE3YjQ5YWYy:",
+        "referrer-policy": "no-referrer",
+        "set-cookie": "[REDACTED]",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-dns-prefetch-control": "off",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-permitted-cross-domain-policies": "none",
+        "x-request-id": "44ad6bca-6651-4116-9b90-72295f1a844f",
+        "x-xss-protection": "0"
+      },
+      "durationMs": 402
+    }
+  ]
+}

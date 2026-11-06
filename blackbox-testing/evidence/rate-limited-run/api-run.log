@@ -1,0 +1,145 @@
+TC-BB-001 Fail Expected values to be strictly equal:
+
+429 !== 201
+
+TC-BB-002 Fail Expected values to be strictly equal:
+
+429 !== 400
+
+TC-BB-003 Fail Expected values to be strictly equal:
+
+429 !== 400
+
+TC-BB-004 Fail Expected values to be strictly equal:
+
+429 !== 400
+
+TC-BB-005 Fail Expected values to be strictly equal:
+
+429 !== 400
+
+TC-BB-006 Fail Expected values to be strictly equal:
+
+429 !== 400
+
+TC-BB-007 Fail Expected values to be strictly equal:
+
+429 !== 400
+
+TC-BB-008 Fail Expected values to be strictly equal:
+
+429 !== 400
+
+TC-BB-009 Fail Expected values to be strictly equal:
+
+429 !== 400
+
+TC-BB-010 Fail Expected values to be strictly equal:
+
+429 !== 201
+
+TC-BB-011 Fail Expected values to be strictly equal:
+
+429 !== 201
+
+TC-BB-012 Fail Expected values to be strictly equal:
+
+429 !== 201
+
+TC-BB-013 Fail Expected values to be strictly equal:
+
+429 !== 201
+
+TC-BB-014 Fail Expected values to be strictly equal:
+
+429 !== 400
+
+TC-BB-015 Fail Expected values to be strictly equal:
+
+429 !== 400
+
+TC-BB-016 Fail Expected values to be strictly equal:
+
+429 !== 409
+
+TC-BB-017 Fail Expected values to be strictly equal:
+
+429 !== 400
+
+TC-BB-018 Fail Expected values to be strictly equal:
+
+429 !== 200
+
+TC-BB-020 Fail Expected values to be strictly equal:
+
+429 !== 401
+
+TC-BB-021 Fail Expected values to be strictly equal:
+
+429 !== 401
+
+TC-BB-022 Fail Expected values to be strictly equal:
+
+429 !== 400
+
+TC-BB-023 Fail Expected values to be strictly equal:
+
+429 !== 401
+
+TC-BB-024 Fail Expected values to be strictly equal:
+
+429 !== 200
+
+TC-BB-025 Fail Expected values to be strictly equal:
+
+429 !== 200
+
+TC-BB-046 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-067 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-069 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-071 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-073 Fail Expected values to be strictly equal:
+
+500 !== 401
+
+TC-BB-104 Fail Expected values to be strictly equal:
+
+429 !== 200
+
+TC-BB-109 Fail Expected values to be strictly equal:
+
+401 !== 200
+
+TC-BB-112 Fail Expected values to be strictly equal:
+
+429 !== 200
+
+TC-BB-113 Fail Expected values to be strictly equal:
+
+429 !== 401
+
+TC-BB-117 Fail The expression evaluated to a falsy value:
+
+  assert.ok(r.json.requestId)
+
+TC-BB-118 Fail The expression evaluated to a falsy value:
+
+  assert.ok(r.json.requestId)
+
+TC-BB-119 Fail The expression evaluated to a falsy value:
+
+  assert.ok(r.json.requestId)
+
+{"total":121,"Pass":85,"Fail":36,"Blocked":0,"Not Run":0}

@@ -1,0 +1,401 @@
+[
+  {
+    "at": "2026-11-06T02:17:11.729Z",
+    "actor": "guest",
+    "method": "POST",
+    "path": "/auth/login",
+    "body": {
+      "username": "admin",
+      "password": "[REDACTED]"
+    },
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "user": {
+          "id": "1",
+          "username": "admin",
+          "fullName": "Quản trị viên",
+          "email": null,
+          "role": "ADMIN",
+          "createdAt": "2026-11-06 02:13:35"
+        },
+        "csrfToken": "[REDACTED]"
+      },
+      "meta": {
+        "requestId": "049cda91-c25c-40a6-b474-05ee1f9d8406"
+      }
+    },
+    "headers": {
+      "connection": "keep-alive",
+      "content-length": "295",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "content-type": "application/json; charset=utf-8",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Fri, 06 Nov 2026 02:17:11 GMT",
+      "etag": "W/\"127-Qvbe0eHuzpzDwPuyRHHuMtNyK+o\"",
+      "keep-alive": "timeout=5",
+      "origin-agent-cluster": "?1",
+      "ratelimit": "\"40-in-15min\"; r=38; t=710",
+      "ratelimit-policy": "\"40-in-15min\"; q=40; w=900; pk=:MTJjYTE3YjQ5YWYy:",
+      "referrer-policy": "no-referrer",
+      "set-cookie": "[REDACTED]",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "x-dns-prefetch-control": "off",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "049cda91-c25c-40a6-b474-05ee1f9d8406",
+      "x-xss-protection": "0"
+    },
+    "durationMs": 413
+  },
+  {
+    "at": "2026-11-06T02:17:12.096Z",
+    "actor": "guest",
+    "method": "POST",
+    "path": "/auth/register",
+    "body": {
+      "username": "bb1793931431315u",
+      "fullName": "QA Thành",
+      "password": "[REDACTED]",
+      "email": "bb1793931431315u@example.test"
+    },
+    "status": 201,
+    "response": {
+      "success": true,
+      "data": {
+        "id": "2",
+        "username": "bb1793931431315u",
+        "fullName": "QA Thành",
+        "email": "bb1793931431315u@example.test",
+        "role": "USER",
+        "createdAt": "2026-11-06 02:17:12"
+      },
+      "meta": {
+        "requestId": "1f425b87-d042-4c29-b821-bdb578ee9385"
+      }
+    },
+    "headers": {
+      "connection": "keep-alive",
+      "content-length": "235",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "content-type": "application/json; charset=utf-8",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Fri, 06 Nov 2026 02:17:12 GMT",
+      "etag": "W/\"eb-76vNo8vwWc8PVFx/b+HXGFUUlWA\"",
+      "keep-alive": "timeout=5",
+      "origin-agent-cluster": "?1",
+      "ratelimit": "\"40-in-15min\"; r=37; t=710",
+      "ratelimit-policy": "\"40-in-15min\"; q=40; w=900; pk=:MTJjYTE3YjQ5YWYy:",
+      "referrer-policy": "no-referrer",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "x-dns-prefetch-control": "off",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "1f425b87-d042-4c29-b821-bdb578ee9385",
+      "x-xss-protection": "0"
+    },
+    "durationMs": 366
+  },
+  {
+    "at": "2026-11-06T02:17:12.473Z",
+    "actor": "guest",
+    "method": "POST",
+    "path": "/auth/login",
+    "body": {
+      "username": "bb1793931431315u",
+      "password": "[REDACTED]"
+    },
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "user": {
+          "id": "2",
+          "username": "bb1793931431315u",
+          "fullName": "QA Thành",
+          "email": "bb1793931431315u@example.test",
+          "role": "USER",
+          "createdAt": "2026-11-06 02:17:12"
+        },
+        "csrfToken": "[REDACTED]"
+      },
+      "meta": {
+        "requestId": "2d5cd9dc-7efe-49ca-98ce-b54978ea55b5"
+      }
+    },
+    "headers": {
+      "connection": "keep-alive",
+      "content-length": "323",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "content-type": "application/json; charset=utf-8",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Fri, 06 Nov 2026 02:17:12 GMT",
+      "etag": "W/\"143-D6ZXypL7VMvfyRmLZovTa+6Df5w\"",
+      "keep-alive": "timeout=5",
+      "origin-agent-cluster": "?1",
+      "ratelimit": "\"40-in-15min\"; r=36; t=710",
+      "ratelimit-policy": "\"40-in-15min\"; q=40; w=900; pk=:MTJjYTE3YjQ5YWYy:",
+      "referrer-policy": "no-referrer",
+      "set-cookie": "[REDACTED]",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "x-dns-prefetch-control": "off",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "2d5cd9dc-7efe-49ca-98ce-b54978ea55b5",
+      "x-xss-protection": "0"
+    },
+    "durationMs": 377
+  },
+  {
+    "at": "2026-11-06T02:17:12.833Z",
+    "actor": "guest",
+    "method": "POST",
+    "path": "/auth/register",
+    "body": {
+      "username": "bb1793931431315v",
+      "fullName": "QA Thành",
+      "password": "[REDACTED]",
+      "email": "bb1793931431315v@example.test"
+    },
+    "status": 201,
+    "response": {
+      "success": true,
+      "data": {
+        "id": "3",
+        "username": "bb1793931431315v",
+        "fullName": "QA Thành",
+        "email": "bb1793931431315v@example.test",
+        "role": "USER",
+        "createdAt": "2026-11-06 02:17:12"
+      },
+      "meta": {
+        "requestId": "130b7ccc-bd9e-4596-a3f7-3bb17c82f1ae"
+      }
+    },
+    "headers": {
+      "connection": "keep-alive",
+      "content-length": "235",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "content-type": "application/json; charset=utf-8",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Fri, 06 Nov 2026 02:17:12 GMT",
+      "etag": "W/\"eb-I6CwzgUZ24TdrW0IL0WdQPLgKI4\"",
+      "keep-alive": "timeout=5",
+      "origin-agent-cluster": "?1",
+      "ratelimit": "\"40-in-15min\"; r=35; t=709",
+      "ratelimit-policy": "\"40-in-15min\"; q=40; w=900; pk=:MTJjYTE3YjQ5YWYy:",
+      "referrer-policy": "no-referrer",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "x-dns-prefetch-control": "off",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "130b7ccc-bd9e-4596-a3f7-3bb17c82f1ae",
+      "x-xss-protection": "0"
+    },
+    "durationMs": 360
+  },
+  {
+    "at": "2026-11-06T02:17:13.189Z",
+    "actor": "guest",
+    "method": "POST",
+    "path": "/auth/login",
+    "body": {
+      "username": "bb1793931431315v",
+      "password": "[REDACTED]"
+    },
+    "status": 200,
+    "response": {
+      "success": true,
+      "data": {
+        "user": {
+          "id": "3",
+          "username": "bb1793931431315v",
+          "fullName": "QA Thành",
+          "email": "bb1793931431315v@example.test",
+          "role": "USER",
+          "createdAt": "2026-11-06 02:17:12"
+        },
+        "csrfToken": "[REDACTED]"
+      },
+      "meta": {
+        "requestId": "8918fcee-ea05-4440-aa85-30afc0aa1325"
+      }
+    },
+    "headers": {
+      "connection": "keep-alive",
+      "content-length": "323",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "content-type": "application/json; charset=utf-8",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Fri, 06 Nov 2026 02:17:13 GMT",
+      "etag": "W/\"143-bSeL431FeLvyxkle4mObqp8CRIc\"",
+      "keep-alive": "timeout=5",
+      "origin-agent-cluster": "?1",
+      "ratelimit": "\"40-in-15min\"; r=34; t=709",
+      "ratelimit-policy": "\"40-in-15min\"; q=40; w=900; pk=:MTJjYTE3YjQ5YWYy:",
+      "referrer-policy": "no-referrer",
+      "set-cookie": "[REDACTED]",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "x-dns-prefetch-control": "off",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "8918fcee-ea05-4440-aa85-30afc0aa1325",
+      "x-xss-protection": "0"
+    },
+    "durationMs": 356
+  },
+  {
+    "at": "2026-11-06T02:17:13.209Z",
+    "actor": "a",
+    "method": "POST",
+    "path": "/admin/books",
+    "body": {
+      "bookCode": "bb1793931431315stock",
+      "title": "QA bb1793931431315stock",
+      "author": "Tác giả QA",
+      "category": "QA",
+      "description": "Dữ liệu thử nghiệm",
+      "totalQuantity": 2
+    },
+    "status": 201,
+    "response": {
+      "success": true,
+      "data": {
+        "id": "7"
+      },
+      "meta": {
+        "requestId": "219078fa-114d-41ce-8de0-aaa5690f1beb"
+      }
+    },
+    "headers": {
+      "connection": "keep-alive",
+      "content-length": "94",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "content-type": "application/json; charset=utf-8",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Fri, 06 Nov 2026 02:17:13 GMT",
+      "etag": "W/\"5e-ktMr5IMJriV2ZlS4f54o3O+Op8I\"",
+      "keep-alive": "timeout=5",
+      "origin-agent-cluster": "?1",
+      "referrer-policy": "no-referrer",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "x-dns-prefetch-control": "off",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "219078fa-114d-41ce-8de0-aaa5690f1beb",
+      "x-xss-protection": "0"
+    },
+    "durationMs": 20
+  },
+  {
+    "at": "2026-11-06T02:17:13.220Z",
+    "actor": "a",
+    "method": "POST",
+    "path": "/admin/books",
+    "body": {
+      "bookCode": "bb1793931431315zero",
+      "title": "QA bb1793931431315zero",
+      "author": "Tác giả QA",
+      "category": "QA",
+      "description": "Dữ liệu thử nghiệm",
+      "totalQuantity": 0
+    },
+    "status": 201,
+    "response": {
+      "success": true,
+      "data": {
+        "id": "8"
+      },
+      "meta": {
+        "requestId": "74cc7873-83e6-4d6f-9a8a-ed0cc0694706"
+      }
+    },
+    "headers": {
+      "connection": "keep-alive",
+      "content-length": "94",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "content-type": "application/json; charset=utf-8",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Fri, 06 Nov 2026 02:17:13 GMT",
+      "etag": "W/\"5e-dnD68bRJZA+t1HAqcejErq4hTAQ\"",
+      "keep-alive": "timeout=5",
+      "origin-agent-cluster": "?1",
+      "referrer-policy": "no-referrer",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "x-dns-prefetch-control": "off",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "74cc7873-83e6-4d6f-9a8a-ed0cc0694706",
+      "x-xss-protection": "0"
+    },
+    "durationMs": 11
+  },
+  {
+    "at": "2026-11-06T02:17:13.230Z",
+    "actor": "a",
+    "method": "POST",
+    "path": "/admin/books",
+    "body": {
+      "bookCode": "bb1793931431315disposable",
+      "title": "QA bb1793931431315disposable",
+      "author": "Tác giả QA",
+      "category": "QA",
+      "description": "Dữ liệu thử nghiệm",
+      "totalQuantity": 3
+    },
+    "status": 201,
+    "response": {
+      "success": true,
+      "data": {
+        "id": "9"
+      },
+      "meta": {
+        "requestId": "9cf4f2e8-ffb5-45dd-b8d7-73f47f24cd38"
+      }
+    },
+    "headers": {
+      "connection": "keep-alive",
+      "content-length": "94",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "content-type": "application/json; charset=utf-8",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin",
+      "date": "Fri, 06 Nov 2026 02:17:13 GMT",
+      "etag": "W/\"5e-XBXTZ6oV75j9eJYCBjLc5vThwBc\"",
+      "keep-alive": "timeout=5",
+      "origin-agent-cluster": "?1",
+      "referrer-policy": "no-referrer",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "x-dns-prefetch-control": "off",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "9cf4f2e8-ffb5-45dd-b8d7-73f47f24cd38",
+      "x-xss-protection": "0"
+    },
+    "durationMs": 10
+  }
+]

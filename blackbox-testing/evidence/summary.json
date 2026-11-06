@@ -1,0 +1,15 @@
+{
+  "Total Test Cases": 137,
+  "Executed Test Cases": 137,
+  "Passed": 129,
+  "Failed": 8,
+  "Blocked": 0,
+  "Not Run": 0,
+  "Execution Rate": "100.00%",
+  "Pass Rate": "94.16%",
+  "Total Bugs": 2,
+  "Critical Bugs": 0,
+  "Major Bugs": 1,
+  "Minor Bugs": 1,
+  "Trivial Bugs": 0
+}

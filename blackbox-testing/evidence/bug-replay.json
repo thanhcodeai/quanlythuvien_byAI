@@ -1,0 +1,336 @@
+[
+  {
+    "attempt": 1,
+    "method": "GET",
+    "path": "/books",
+    "status": 401,
+    "requestIdHeader": "77c56f9f-0f74-412f-809b-6f672a147820",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "UNAUTHENTICATED",
+        "message": "Vui lòng đăng nhập"
+      },
+      "requestId": "77c56f9f-0f74-412f-809b-6f672a147820"
+    }
+  },
+  {
+    "attempt": 1,
+    "method": "GET",
+    "path": "/me",
+    "status": 401,
+    "requestIdHeader": "9e054233-c64e-4d08-8694-08807e5aca84",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "UNAUTHENTICATED",
+        "message": "Vui lòng đăng nhập"
+      },
+      "requestId": "9e054233-c64e-4d08-8694-08807e5aca84"
+    }
+  },
+  {
+    "attempt": 1,
+    "method": "GET",
+    "path": "/admin/stats",
+    "status": 500,
+    "requestIdHeader": "873c490f-fbd1-494c-a240-90a2c71eafa8",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "SERVICE_ERROR",
+        "message": "Có lỗi hệ thống, vui lòng thử lại"
+      },
+      "requestId": "873c490f-fbd1-494c-a240-90a2c71eafa8"
+    }
+  },
+  {
+    "attempt": 1,
+    "method": "GET",
+    "path": "/admin/books",
+    "status": 500,
+    "requestIdHeader": "bd0415ff-a5b0-4d10-af27-1cc88e1ef3d1",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "SERVICE_ERROR",
+        "message": "Có lỗi hệ thống, vui lòng thử lại"
+      },
+      "requestId": "bd0415ff-a5b0-4d10-af27-1cc88e1ef3d1"
+    }
+  },
+  {
+    "attempt": 1,
+    "method": "GET",
+    "path": "/admin/users",
+    "status": 500,
+    "requestIdHeader": "0807ed64-a3ae-40db-94b9-b9234cdf44e0",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "SERVICE_ERROR",
+        "message": "Có lỗi hệ thống, vui lòng thử lại"
+      },
+      "requestId": "0807ed64-a3ae-40db-94b9-b9234cdf44e0"
+    }
+  },
+  {
+    "attempt": 1,
+    "method": "GET",
+    "path": "/admin/borrow-requests",
+    "status": 500,
+    "requestIdHeader": "36f009be-97f9-473c-b8d6-57d2a73052a7",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "SERVICE_ERROR",
+        "message": "Có lỗi hệ thống, vui lòng thử lại"
+      },
+      "requestId": "36f009be-97f9-473c-b8d6-57d2a73052a7"
+    }
+  },
+  {
+    "attempt": 1,
+    "method": "POST",
+    "path": "/borrow-requests",
+    "body": "{\"bookId\":\"1\",\"borrowDate\":\"2026-11-06\",\"dueDate\":\"2026-11-20\"}",
+    "status": 500,
+    "requestIdHeader": "36f19b84-337f-43e3-b877-5d33055294d6",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "SERVICE_ERROR",
+        "message": "Có lỗi hệ thống, vui lòng thử lại"
+      },
+      "requestId": "36f19b84-337f-43e3-b877-5d33055294d6"
+    }
+  },
+  {
+    "attempt": 1,
+    "method": "POST",
+    "path": "/auth/register",
+    "body": "{\"username\":",
+    "status": 400,
+    "requestIdHeader": null,
+    "response": {
+      "success": false,
+      "error": {
+        "code": "INTERNAL_ERROR",
+        "message": "Unexpected end of JSON input"
+      }
+    }
+  },
+  {
+    "attempt": 1,
+    "method": "POST",
+    "path": "/auth/register",
+    "body": "null",
+    "status": 400,
+    "requestIdHeader": null,
+    "response": {
+      "success": false,
+      "error": {
+        "code": "INTERNAL_ERROR",
+        "message": "Unexpected token 'n', \"null\" is not valid JSON"
+      }
+    }
+  },
+  {
+    "attempt": 1,
+    "method": "POST",
+    "path": "/auth/register",
+    "body": "fullName=A×150000",
+    "status": 413,
+    "requestIdHeader": null,
+    "response": {
+      "success": false,
+      "error": {
+        "code": "INTERNAL_ERROR",
+        "message": "request entity too large"
+      }
+    }
+  },
+  {
+    "attempt": 1,
+    "method": "GET",
+    "path": "/health",
+    "status": 200,
+    "requestIdHeader": "bca81474-7f7a-453c-8ea8-3b8ce1775be8",
+    "response": {
+      "success": true,
+      "data": {
+        "status": "ok"
+      },
+      "meta": {
+        "requestId": "bca81474-7f7a-453c-8ea8-3b8ce1775be8"
+      }
+    }
+  },
+  {
+    "attempt": 2,
+    "method": "GET",
+    "path": "/books",
+    "status": 401,
+    "requestIdHeader": "b7487eb4-4de9-40f3-b6ce-9c74cce48a03",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "UNAUTHENTICATED",
+        "message": "Vui lòng đăng nhập"
+      },
+      "requestId": "b7487eb4-4de9-40f3-b6ce-9c74cce48a03"
+    }
+  },
+  {
+    "attempt": 2,
+    "method": "GET",
+    "path": "/me",
+    "status": 401,
+    "requestIdHeader": "179af50a-ef57-40c1-91f7-bace28d16753",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "UNAUTHENTICATED",
+        "message": "Vui lòng đăng nhập"
+      },
+      "requestId": "179af50a-ef57-40c1-91f7-bace28d16753"
+    }
+  },
+  {
+    "attempt": 2,
+    "method": "GET",
+    "path": "/admin/stats",
+    "status": 500,
+    "requestIdHeader": "21f3ca60-5570-404c-b8b7-ead637d7599b",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "SERVICE_ERROR",
+        "message": "Có lỗi hệ thống, vui lòng thử lại"
+      },
+      "requestId": "21f3ca60-5570-404c-b8b7-ead637d7599b"
+    }
+  },
+  {
+    "attempt": 2,
+    "method": "GET",
+    "path": "/admin/books",
+    "status": 500,
+    "requestIdHeader": "c54b42f3-20df-43e1-be45-413a7f40e8b8",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "SERVICE_ERROR",
+        "message": "Có lỗi hệ thống, vui lòng thử lại"
+      },
+      "requestId": "c54b42f3-20df-43e1-be45-413a7f40e8b8"
+    }
+  },
+  {
+    "attempt": 2,
+    "method": "GET",
+    "path": "/admin/users",
+    "status": 500,
+    "requestIdHeader": "49154dca-7096-415c-8b75-01fb50468aa6",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "SERVICE_ERROR",
+        "message": "Có lỗi hệ thống, vui lòng thử lại"
+      },
+      "requestId": "49154dca-7096-415c-8b75-01fb50468aa6"
+    }
+  },
+  {
+    "attempt": 2,
+    "method": "GET",
+    "path": "/admin/borrow-requests",
+    "status": 500,
+    "requestIdHeader": "67525c6d-b763-43e0-af94-40ac746131d5",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "SERVICE_ERROR",
+        "message": "Có lỗi hệ thống, vui lòng thử lại"
+      },
+      "requestId": "67525c6d-b763-43e0-af94-40ac746131d5"
+    }
+  },
+  {
+    "attempt": 2,
+    "method": "POST",
+    "path": "/borrow-requests",
+    "body": "{\"bookId\":\"1\",\"borrowDate\":\"2026-11-06\",\"dueDate\":\"2026-11-20\"}",
+    "status": 500,
+    "requestIdHeader": "2152ed25-a291-4da7-a44a-35d3788122b0",
+    "response": {
+      "success": false,
+      "error": {
+        "code": "SERVICE_ERROR",
+        "message": "Có lỗi hệ thống, vui lòng thử lại"
+      },
+      "requestId": "2152ed25-a291-4da7-a44a-35d3788122b0"
+    }
+  },
+  {
+    "attempt": 2,
+    "method": "POST",
+    "path": "/auth/register",
+    "body": "{\"username\":",
+    "status": 400,
+    "requestIdHeader": null,
+    "response": {
+      "success": false,
+      "error": {
+        "code": "INTERNAL_ERROR",
+        "message": "Unexpected end of JSON input"
+      }
+    }
+  },
+  {
+    "attempt": 2,
+    "method": "POST",
+    "path": "/auth/register",
+    "body": "null",
+    "status": 400,
+    "requestIdHeader": null,
+    "response": {
+      "success": false,
+      "error": {
+        "code": "INTERNAL_ERROR",
+        "message": "Unexpected token 'n', \"null\" is not valid JSON"
+      }
+    }
+  },
+  {
+    "attempt": 2,
+    "method": "POST",
+    "path": "/auth/register",
+    "body": "fullName=A×150000",
+    "status": 413,
+    "requestIdHeader": null,
+    "response": {
+      "success": false,
+      "error": {
+        "code": "INTERNAL_ERROR",
+        "message": "request entity too large"
+      }
+    }
+  },
+  {
+    "attempt": 2,
+    "method": "GET",
+    "path": "/health",
+    "status": 200,
+    "requestIdHeader": "903c5334-cee5-4212-9d8e-2cf8a935c87e",
+    "response": {
+      "success": true,
+      "data": {
+        "status": "ok"
+      },
+      "meta": {
+        "requestId": "903c5334-cee5-4212-9d8e-2cf8a935c87e"
+      }
+    }
+  }
+]
